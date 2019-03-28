@@ -1,0 +1,13 @@
+.resultContainer--container{
+  display:grid;
+  grid-gap: 1rem;
+  justify-items: center;
+  padding: 1rem;
+}
+
+
+@media (min-width: 800px){
+  .resultContainer--container{
+    grid-template-columns: repeat(2,1fr);
+  }
+}

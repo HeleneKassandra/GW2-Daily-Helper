@@ -1,0 +1,39 @@
+.App{
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto fit-content(100px);
+  height: 100%;
+  width: 100%;
+}
+.main-content{
+  overflow: auto;
+}
+
+.navbar--container{
+  background: #191716;
+  display: grid;
+  grid-row: 2;
+  width: 100%;
+}
+
+.topBanner_blueBg{
+  background: url('../assets/images/headerblueFixedges.png');
+}
+.topBanner_redBg{
+  background:url('../assets/images/headerredFixedges.png');
+}
+
+/* DESKTOP */
+@media (min-width: 1000px){
+  .App {
+    grid-template-columns: fit-content(100px) auto;
+    grid-template-rows: auto;
+  }
+  .main-content{
+    grid-column: 2;
+  }
+  .navbar--container{
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
