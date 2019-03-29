@@ -1,15 +1,14 @@
 import React from 'react';
 import './SearchTopSection.css';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
+import FilterDropdown from '../FilterDropdown/FilterDropdown.js';
+
 
 
 
 const searchTopSection = (props) => {
 
   const typeOptionsList = [
-    {name: "Choose type", value: "NONE" },
-    {name: "All", value: "ALL" },
+    {name: "Show all", value: "ALL" },
     {name: "Miner", value: "Miner" },
     {name: "Forager", value: "Forager"},
     {name: "Lumberer", value: "Lumberer"},
@@ -18,8 +17,7 @@ const searchTopSection = (props) => {
   ];
 
   const areaOptionList = [
-    {name: "Choose area", value: "NONE" },
-    {name: "All", value: "ALL" },
+    {name: "Show all", value: "ALL" },
     {name: "Ascalon", value: "Ascalon" },
     {name: "Kryta", value: "Kryta" },
     {name: "Shiverpeaks", value: "Shiverpeaks" },
@@ -30,17 +28,6 @@ const searchTopSection = (props) => {
     {name: "Desert", value: "Desert" },
   ];
 
-  const areaSelect = areaOptionList.map((area, index) => {
-      return (
-         <MenuItem value={area.value} key={index}>{area.name}</MenuItem>
-      );
-    });
-
-  const typeSelect = typeOptionsList.map((daily, index) => {
-      return (
-         <MenuItem value={daily.value} key={index}>{daily.name}</MenuItem>
-      );
-    });
 
   return (
       <header className='SearchTop--container topBanner_blueBg'>
@@ -48,24 +35,8 @@ const searchTopSection = (props) => {
          Search for locations
         </h1>
         <div className="SearchTop--content">
-        <label>
-          Choose daily:<br/>
-          <Select
-           value={props.state.filter.Type}
-           onChange={props.setTypeFilter}
-          >
-          {typeSelect}
-        </Select>
-        </label>
-        <label>
-          Choose area:<br/>
-          <Select
-           value={props.state.filter.Area}
-           onChange={props.setAreaFilter}
-          >
-          {areaSelect}
-        </Select>
-        </label>
+          <FilterDropdown label="Choose daily" data={typeOptionsList} value={props.state.filter.Type} onChange={props.setTypeFilter} />
+          <FilterDropdown label="Choose area"data={areaOptionList} value={props.state.filter.Area} onChange={props.setAreaFilter} />
         </div>
 
       </header>

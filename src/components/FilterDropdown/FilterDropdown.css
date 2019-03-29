@@ -1,0 +1,21 @@
+.MuiInputBase-input-31 {
+  align-items: center;
+  display: grid!important;
+  grid-column-gap: 0.5rem;
+  grid-template-columns: 30px auto fit-content(40px);
+}
+
+.optionIcon{
+  margin-right: 0.5rem;
+  width: 30px;
+}
+
+.select{
+  font-size: 1.8em!important;
+  width: 300px;
+}
+
+.filterDropdown--Label{
+  color: #464646;
+  font-size: 0.8rem;
+}

@@ -26,10 +26,6 @@
   padding: 0.5rem 0;
 }
 
-.resultItem--content--rewardIcon{
-  justify-self:center;
-  width: 25px;
-}
 
 .resultItem--content-WaypointInfo{
   display:grid;

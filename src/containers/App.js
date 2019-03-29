@@ -25,8 +25,8 @@ class App extends Component {
      this.setState({
          menuOptionChosen: item,
          filter: {
-           Type: 'NONE',
-           Area: 'NONE'
+           Type: 'ALL',
+           Area: 'ALL'
          }
      });
    }
