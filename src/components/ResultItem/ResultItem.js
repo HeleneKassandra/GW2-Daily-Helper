@@ -1,35 +1,34 @@
 import React from 'react';
 import './ResultItem.css';
-import ImageZoom from 'react-medium-image-zoom';
-import DefaultImg from '../../assets/images/locations/Applenook_NoImage.jpg';
-import WaypointIcon from '../../assets/images/icons/waypointIcon.png';
 import IconSelecter from '../IconSelecter/IconSelecter.js';
-
-
-
+import LocationImgFinder from '../LocationImgFinder/LocationImgFinder.js';
+import Clipboard from 'react-clipboard.js';
+ import { toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
 
 const resultItem = (props) => {
-  const imageZoomSettings = {
-    src: DefaultImg,
-    alt: 'Image showing location around ' + props.location.WaypointName,
-    className: 'resultItem--image'
-  };
+
+  const onSuccess = () => {
+    return toast("Copied!");
+
+  }
 
   const iconfor = props.location.Type === "Minidungeon" ? "Reward" : props.location.Type;
 
   return (
     <div className="resultItem--container">
-      <ImageZoom image={imageZoomSettings} />
+      <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName}/>
       <div className="resultItem--content">
-        <img src={WaypointIcon} alt="Waypoint Icon"/>
-        <div className="resultItem--content-WaypointInfo">
+        <IconSelecter iconfor="Waypoint" />
+        <div>
           <strong>{props.location.WaypointName}</strong>
           <div>
-            <strong className="resultItem--content-WaypointCode">{props.location.WaypointCode}</strong>
+            <Clipboard component="strong" className="resultItem--content-WaypointCode" onSuccess={onSuccess} data-clipboard-text={props.location.WaypointCode}>{props.location.WaypointCode}</Clipboard>
             <span className="resultItem--content--WaypointCopyInfo"> - Click to copy</span>
           </div>
         </div>
+
         <div className="resultItem--content-gatheringItemContainer">
           <IconSelecter iconfor={iconfor} />
           <div>

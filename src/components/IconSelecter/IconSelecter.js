@@ -41,6 +41,9 @@ switch(props.iconfor){
   case "Reward":
     image =  <img src={images['achievement_chest.png']} alt="Achievement chest icon" style={style}/>
   break;
+  case "Waypoint":
+    image =  <img src={images['waypointIcon.png']} alt="Waypoint icon" style={style}/>
+  break;
 
   default:
     image = <img src={images['World_Completion.png']} alt="world icon" style={style}/>;

@@ -27,11 +27,6 @@
 }
 
 
-.resultItem--content-WaypointInfo{
-  display:grid;
-  grid-template-rows: repeat(2,1fr);
-}
-
 .resultItem--content--WaypointCopyInfo{
   color: #666;
   font-size: 0.8em;
