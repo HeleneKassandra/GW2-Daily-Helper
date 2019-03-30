@@ -3,14 +3,14 @@ import './ResultItem.css';
 import IconSelecter from '../IconSelecter/IconSelecter.js';
 import LocationImgFinder from '../LocationImgFinder/LocationImgFinder.js';
 import Clipboard from 'react-clipboard.js';
- import { toast } from 'react-toastify';
- import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const resultItem = (props) => {
 
   const onSuccess = () => {
-    return toast("Copied!");
+    return toast.info("Waypoint copied!", { autoClose: 1500});
 
   }
 
