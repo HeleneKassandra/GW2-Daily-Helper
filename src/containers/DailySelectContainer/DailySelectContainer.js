@@ -1,31 +1,32 @@
 import React from 'react';
 import './DailySelectContainer.css';
-import DailySelect from '../../components/DailySelect/DailySelect.js';
+import DailyItemContainer from '../../components/DailyItemContainer/DailyItemContainer.js';
 
 
-const topbanner = (props) => {
+const dailySelectContainer = (props) => {
 
-  const showBackBtn = ( props.showToday ? null :<button className="dailySelectContainer--arrow dailySelectContainer--arrow-left" onClick={props.changeDay}>
+
+  const showBackBtn = ( props.state.showToday ? null :<button className="dailySelectContainer--arrow dailySelectContainer--arrow-left" onClick={props.changeDay}>
         <i className="fas fa-angle-left fa-3x"></i>
       </button>
   );
 
-  const showForwardBtn = ( !props.showToday ? null :<button className="dailySelectContainer--arrow dailySelectContainer--arrow-right" onClick={props.changeDay}>
+  const showForwardBtn = ( !props.state.showToday ? null :<button className="dailySelectContainer--arrow dailySelectContainer--arrow-right" onClick={props.changeDay}>
         <i className="fas fa-angle-right fa-3x"></i>
       </button>
   );
 
+  const fractalInfo = (props.state.menuOptionChosen === "FRACTAL" ? <span className="dailySelectContainer--fractalinfo">Fractals are the same for all tiers</span> : null);
+
   return (
-    <header className={props.showToday ? 'dailySelectContainer--container topBanner_blueBg' : 'dailySelectContainer--container topBanner_redBg'}>
+    <header className={props.state.showToday ? 'dailySelectContainer--container topBanner_blueBg' : 'dailySelectContainer--container topBanner_redBg'}>
     <h1 className="dailySelectContainer--header">
-     {props.showToday ? "Today" : "Tomorrow"}
+     {props.state.showToday ? "Today" : "Tomorrow"}
     </h1>
     {showBackBtn}
     <div className="dailySelectContainer--content">
-      <DailySelect />
-      <DailySelect />
-      <DailySelect />
-      <DailySelect />
+    {fractalInfo}
+    <DailyItemContainer state={props.state} />
     </div>
     {showForwardBtn}
     </header>
@@ -34,4 +35,4 @@ const topbanner = (props) => {
 
 }
 
-export default topbanner;
+export default dailySelectContainer;

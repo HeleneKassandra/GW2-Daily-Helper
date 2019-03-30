@@ -13,12 +13,91 @@ class App extends Component {
       Area: 'ALL'
     },
     showToday: true,
+    dailyPve: [],
+    dailyWvW: [],
+    dailyFractals: [],
+    TmrdailyPve: [],
+    TmrdailyWvW: [],
+    TmrdailyFractals: [],
  };
+
+
+ getDailyHandler = (tomorrow) => {
+   let dailyIdUrl = 'https://api.guildwars2.com/v2/achievements/daily';
+   if(tomorrow){
+     dailyIdUrl = dailyIdUrl + '/tomorrow';
+   }
+
+
+   fetch(dailyIdUrl)
+   .then(result => {
+     return result.json();
+   }).then(data => {
+     const pveIds = [];
+     const wvwIds = [];
+     const fractalIds = [];
+     const pveDaily = [];
+     const wvwDaily = [];
+     const fractalDaily =[];
+     data.pve.map(item => {
+       return pveIds.push(item.id);
+     });
+     data.wvw.map(item => {
+       return wvwIds.push(item.id);
+     });
+     data.fractals.map(item => {
+       return fractalIds.push(item.id);
+     });
+
+     fetch('https://api.guildwars2.com/v2/achievements?ids=' + pveIds.join(',') + wvwIds.join(',')+ fractalIds.join(','))
+     .then(result => {
+       return result.json();
+     }).then(data => {
+       data.map((item) => {
+         if(pveIds.includes(item.id)){
+            return pveDaily.push(item);
+         }
+         if(wvwIds.includes(item.id)){
+           return wvwDaily.push(item);
+         }
+         if(fractalIds.includes(item.id) && item.name.includes("Tier 4")){
+          return fractalDaily.push(item);
+         }
+         return null;
+       })
+
+       if(tomorrow){
+         this.setState({
+           TmrdailyPve: pveDaily,
+           TmrdailyWvW: wvwDaily,
+           TmrdailyFractals: fractalDaily,
+         })
+       }
+       else {
+         this.setState({
+           dailyPve: pveDaily,
+           dailyWvW: wvwDaily,
+           dailyFractals: fractalDaily,
+         })
+       };
+
+     });
+
+   });
+   return null;
+ }
+
+ componentDidMount(){
+   this.getDailyHandler(false);
+ }
 
  changeDayHandler = () => {
    this.setState({
      showToday: !this.state.showToday
    });
+  if(this.state.showToday && this.state.TmrdailyPve.length <= 0 && this.state.TmrdailyWvW.length <= 0 && this.state.TmrdailyFractals <= 0){
+     this.getDailyHandler(true);
+  }
  }
  changeMenuOptionChoosenHandler = (item) => {
    if(item === 'SEARCH'){

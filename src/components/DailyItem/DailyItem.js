@@ -1,15 +1,15 @@
 import React from 'react';
-import './DailySelect.css';
+import './DailyItem.css';
 import DailyAchievementImg from './Daily_Achievement.png';
 
-const dailySelect = () => {
+const dailyItem = (props) => {
   return(
     <div className="dailySelect--container">
       <img src={DailyAchievementImg} className="dailySelect-img" alt="Daily achievement icon"/>
-      <span>Name</span>
+      <span>{props.name}</span>
     </div>
   );
 
 }
 
-export default dailySelect;
+export default dailyItem;

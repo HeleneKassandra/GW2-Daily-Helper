@@ -18,9 +18,11 @@
 
 .topBanner_blueBg{
   background: url('../assets/images/headerblueFixedges.png');
+  background-size: cover;
 }
 .topBanner_redBg{
   background:url('../assets/images/headerredFixedges.png');
+  background-size: cover;
 }
 
 /* DESKTOP */

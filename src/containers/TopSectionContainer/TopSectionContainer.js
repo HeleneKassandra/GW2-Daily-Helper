@@ -9,7 +9,7 @@ const topSectionContainer = (props) => {
   }
 
   else {
-      return <DailySelectContainer showToday={props.showToday} changeDay={props.changeDay}/>
+      return <DailySelectContainer state={props.state} changeDay={props.changeDay}/>
   }
 }
 

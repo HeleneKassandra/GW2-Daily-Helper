@@ -2,10 +2,12 @@
   align-items: center;
   background: #FFF;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
   display:grid;
   grid-column-gap: 1rem;
   grid-template-columns: fit-content(40%) auto;
   padding: 1rem;
+  user-select: none;
 }
 
 .dailySelect--container:hover{
