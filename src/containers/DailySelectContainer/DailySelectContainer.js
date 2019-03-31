@@ -26,7 +26,7 @@ const dailySelectContainer = (props) => {
     {showBackBtn}
     <div className="dailySelectContainer--content">
     {fractalInfo}
-    <DailyItemContainer state={props.state} />
+    <DailyItemContainer state={props.state} filteronDaily={props.filteronDaily}/>
     </div>
     {showForwardBtn}
     </header>

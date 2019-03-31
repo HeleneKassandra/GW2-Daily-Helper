@@ -19,6 +19,34 @@ class App extends Component {
     TmrdailyPve: [],
     TmrdailyWvW: [],
     TmrdailyFractals: [],
+    typeOptionsList:[
+      {name: "Show all", value: "ALL" },
+      {name: "Miner", value: "Miner" },
+      {name: "Forager", value: "Forager"},
+      {name: "Lumberer", value: "Lumberer"},
+      {name: "Vista Viewer", value: "Vista Viewer"},
+      {name: "Minidungeon", value: "Minidungeon"},
+      {name: "Event Completer", value: "Event Completer"},
+      {name: "WvW Veteran", value: "WvW Veteran"},
+      {name: "WvW Caravan", value: "WvW Caravan"},
+      {name: "WvW Camp", value: "WvW Camp"},
+      {name: "WvW Tower", value: "WvW Tower"},
+      {name: "Mists Guard", value: "Mists Guard"},
+      {name: "Fractals", value: "Fractal" }
+    ],
+    areaOptionList: [
+      {name: "Show all", value: "ALL" },
+      {name: "Ascalon", value: "Ascalon" },
+      {name: "Kryta", value: "Kryta" },
+      {name: "Shiverpeaks", value: "Shiverpeaks" },
+      {name: "Orr", value: "Orr" },
+      {name: "Maguuma Jungle", value: "Maguuma Jungle" },
+      {name: "Maguuma Wastes", value: "Maguuma Wastes" },
+      {name: "Heart of Maguuma", value: "Heart of Maguuma" },
+      {name: "Desert", value: "Desert" },
+      {name: "WvW", value: "WvW" },
+      {name: "Fractals", value: "Fractal" }
+    ]
  };
 
 
@@ -99,6 +127,15 @@ class App extends Component {
      this.getDailyHandler(true);
   }
  }
+
+ filteronDaily = (type, area) => {
+   this.setState({
+     filter: {
+       Type: type,
+       Area: area
+     }
+   })
+ }
  changeMenuOptionChoosenHandler = (item) => {
    if(item === 'SEARCH'){
      this.setState({
@@ -146,7 +183,8 @@ class App extends Component {
             changeDay={this.changeDayHandler}
             menuOption={this.state.menuOptionChosen}
             setTypeFilter={this.setTypeFilterHandler}
-            setAreaFilter={this.setAreaFilterHandler}/>
+            setAreaFilter={this.setAreaFilterHandler}
+            filteronDaily={this.filteronDaily}/>
           <ResultContainer filter={this.state.filter} menuOption={this.state.menuOptionChosen}/>
         </div>
       </div>
