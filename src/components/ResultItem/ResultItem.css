@@ -27,7 +27,17 @@
   user-select: none;
 }
 
+.resultItem-image--Container{
+  position: relative;
+}
 
+.resultItem-mapname{
+  position: absolute;
+  bottom: 0.5rem;
+  left: 1rem;
+  color: #FFF;
+
+}
 .resultItem--content--WaypointCopyInfo{
   color: #666;
   font-size: 0.8em;

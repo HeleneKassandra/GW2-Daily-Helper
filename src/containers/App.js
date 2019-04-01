@@ -10,7 +10,8 @@ class App extends Component {
     menuOptionChosen: 'PVE',
     filter: {
       Type: 'ALL',
-      Area: 'ALL'
+      Area: 'ALL',
+      FractalName: ''
     },
     showToday: true,
     dailyPve: [],
@@ -32,7 +33,7 @@ class App extends Component {
       {name: "WvW Camp", value: "WvW Camp"},
       {name: "WvW Tower", value: "WvW Tower"},
       {name: "Mists Guard", value: "Mists Guard"},
-      {name: "Fractals", value: "Fractal" }
+      {name: "Fractal", value: "Fractal" }
     ],
     areaOptionList: [
       {name: "Show all", value: "ALL" },
@@ -45,8 +46,31 @@ class App extends Component {
       {name: "Heart of Maguuma", value: "Heart of Maguuma" },
       {name: "Desert", value: "Desert" },
       {name: "WvW", value: "WvW" },
-      {name: "Fractals", value: "Fractal" }
-    ]
+      {name: "Fractals of the Mists", value: "Fractals of the Mists" }
+    ],
+    fractalList:[
+      {name: "Show all", value: "ALL" },
+      {name: "Volcanic", value: "Volcanic" },
+      {name: "Uncategorized", value: "Uncategorized"},
+      {name: "Snowblind", value: "Snowblind"},
+      {name: "Urban Battleground", value: "Urban Battleground"},
+      {name: "Swampland", value: "Swampland"},
+      {name: "Cliffside", value: "Cliffside"},
+      {name: "Aquatic Ruins", value: "Aquatic Ruins"},
+      {name: "Underground Facility", value: "Underground Facility"},
+      {name: "Molten Furnace", value: "Molten Furnace"},
+      {name: "Molten Boss", value: "Molten Boss"},
+      {name: "Deepstone", value: "Deepstone"},
+      {name: "Siren's Reef", value: "Siren's Reef" },
+      {name: "Chaos Isles", value: "Chaos Isles" },
+      {name: "Aetherblade", value: "Aetherblade" },
+      {name: "Thaumanova Reactor", value: "Thaurmanova Reactor" },
+      {name: "Twilight Oasis", value: "Twilight Oasis" },
+      {name: "Captain Mai Trin Boss", value: "Captain Mai Trin Boss" },
+      {name: "Solid Ocean", value: "Solid Ocean" },
+      {name: "Nightmare", value: "Nightmare" },
+      {name: "Shattered Observatory", value: "Shattered Observatory" },
+    ],
  };
 
 
@@ -128,13 +152,24 @@ class App extends Component {
   }
  }
 
- filteronDaily = (type, area) => {
-   this.setState({
-     filter: {
-       Type: type,
-       Area: area
-     }
-   })
+ filteronDaily = (type, area, fractal) => {
+   if(!fractal){
+     this.setState({
+       filter: {
+         Type: type,
+         Area: area,
+       }
+     })
+   }
+   else {
+     this.setState({
+       filter: {
+         Type: type,
+         Area: area,
+         FractalName: fractal
+       }
+     })
+   }
  }
  changeMenuOptionChoosenHandler = (item) => {
    if(item === 'SEARCH'){

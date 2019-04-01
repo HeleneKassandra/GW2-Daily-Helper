@@ -18,7 +18,10 @@ const resultItem = (props) => {
 
   return (
     <div className="resultItem--container">
-      <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName}/>
+      <div className="resultItem-image--Container">
+      <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName} className="locationimage"/>
+      <h3 className="resultItem-mapname">{props.location.MapName}</h3>
+      </div>
       <div className="resultItem--content">
         <IconSelecter iconfor="Waypoint" />
         <div>

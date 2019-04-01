@@ -44,6 +44,9 @@ switch(props.iconfor){
   case "Waypoint":
     image =  <img src={images['waypointIcon.png']} alt="Waypoint icon" style={style}/>
   break;
+  case "Fractal":
+    image =  null;
+  break;
 
   default:
     image = <img src={images['World_Completion.png']} alt="world icon" style={style}/>;

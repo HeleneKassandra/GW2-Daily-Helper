@@ -856,8 +856,386 @@ const resultContainer = (props) => {
        ];
     break;
 
+    case 'WVW':
+      locationList = [
+        {
+          Area: "WvW",
+          MapName: "Map name",
+          Type: "WvW",
+          WaypointCode: "",
+          WaypointName: "MapName",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+      ];
+    break;
+    case 'FRACTAL':
+      locationList = [
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Volcanic",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Uncategorized",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Snowblind",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Urban Battleground",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Swampland",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Cliffside",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Aquatic Ruins",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Underground Facility",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Molten Furnace",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Molten Boss",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Deepstone",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Siren's Reef",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Chaos Isles",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Aetherblade",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Thaumanova Reactor",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Twilight Oasis",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Captain Mai Trin Boss",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Solid Ocean",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Nightmare",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Shattered Observatory",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+        },
+      ];
+    break;
+
     case 'SEARCH':
     locationList = [
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Volcanic",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Uncategorized",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Snowblind",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Urban Battleground",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Swampland",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Cliffside",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Aquatic Ruins",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Underground Facility",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Molten Furnace",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Molten Boss",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Deepstone",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Siren's Reef",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Chaos Isles",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Aetherblade",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Thaumanova Reactor",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Twilight Oasis",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Captain Mai Trin Boss",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Solid Ocean",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Nightmare",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
+      {
+        Area: "Fractals of the Mists",
+        MapName: "Shattered Observatory",
+        Type: "Fractal",
+        WaypointCode: "[&BDAEAAA=]",
+        WaypointName: "Fort Marriner Waypoint",
+        GatheringItem: "",
+        ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+      },
          {
            Area: "Ascalon",
            MapName: "Plains of Ashford",
@@ -1710,10 +2088,11 @@ const resultContainer = (props) => {
   };
 
   const locations = locationList.map((location, index) => {
-
-    if(props.filter.Type === 'NONE' && props.filter.Area === 'NONE')
-      return null;
-
+    if(props.filter.Type === 'Fractal' && props.filter.Area === 'Fractals of the Mists'){
+        return props.filter.FractalName === location.MapName ?
+        <ResultItem key={index} location={location}/>
+        : null;
+    }
     if(props.filter.Type === 'ALL' && props.filter.Area === 'ALL'){
         return <ResultItem key={index} location={location}/>
     }
@@ -1733,6 +2112,7 @@ const resultContainer = (props) => {
         <ResultItem key={index} location={location}/>
         : null;
     }
+
     return null;
   });
 
