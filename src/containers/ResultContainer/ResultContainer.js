@@ -860,12 +860,165 @@ const resultContainer = (props) => {
       locationList = [
         {
           Area: "WvW",
-          MapName: "Map name",
-          Type: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Camp",
           WaypointCode: "",
-          WaypointName: "MapName",
+          WaypointName: "Camp capturer",
           GatheringItem: "",
-          ImageName: "Ascalon/Ascalon_Gatherer_Loreclaw.jpg"
+          ImageName: "WvW/Alpine_Camp_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Camp",
+          WaypointCode: "",
+          WaypointName: "Camp capturer",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Camp_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Eternal Battleground",
+          Type: "WvW Camp",
+          WaypointCode: "",
+          WaypointName: "Camp capturer",
+          GatheringItem: "",
+          ImageName: "WvW/EBG_Camp_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Harpy veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Harpy_Veteran.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Warg veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Warg_Veteran.jpg"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Wurm veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Wurm_Veteran.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Harpy veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Harpy_Veteran.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Warg veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Warg_Veteran.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Veteran",
+          WaypointCode: "",
+          WaypointName: "Wurm veteran",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Wurm_Veteran.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Keep",
+          WaypointCode: "",
+          WaypointName: "Keep capturer",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Keep_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Keep",
+          WaypointCode: "",
+          WaypointName: "Keep capturer",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Keep_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Eternal Battleground",
+          Type: "WvW Keep",
+          WaypointCode: "",
+          WaypointName: "Keep capturer",
+          GatheringItem: "",
+          ImageName: "WvW/EBG_Keep_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Land Claimer",
+          WaypointCode: "",
+          WaypointName: "Land claimer",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Land_Claimer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battleground",
+          Type: "WvW Land Claimer",
+          WaypointCode: "",
+          WaypointName: "Land claimer",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Land_Claimer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Eternal Battleground",
+          Type: "WvW Land Claimer",
+          WaypointCode: "",
+          WaypointName: "Land claimer",
+          GatheringItem: "",
+          ImageName: "WvW/EBG_Land_Claimer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Both Alpine Battlegrounds",
+          Type: "WvW Tower",
+          WaypointCode: "",
+          WaypointName: "Tower capturer",
+          GatheringItem: "",
+          ImageName: "WvW/Alpine_Tower_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Desert Battlegrounds",
+          Type: "WvW Tower",
+          WaypointCode: "",
+          WaypointName: "Tower capturer",
+          GatheringItem: "",
+          ImageName: "WvW/Desert_Tower_Capturer.png"
+        },
+        {
+          Area: "WvW",
+          MapName: "Eternal Battlegrounds",
+          Type: "WvW Tower",
+          WaypointCode: "",
+          WaypointName: "Tower capturer",
+          GatheringItem: "",
+          ImageName: "WvW/EBG_Tower_Capturer.png"
         },
       ];
     break;
@@ -1056,6 +1209,168 @@ const resultContainer = (props) => {
 
     case 'SEARCH':
     locationList = [
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Camp",
+        WaypointCode: "",
+        WaypointName: "Camp capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Camp_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Camp",
+        WaypointCode: "",
+        WaypointName: "Camp capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Camp_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Eternal Battleground",
+        Type: "WvW Camp",
+        WaypointCode: "",
+        WaypointName: "Camp capturer",
+        GatheringItem: "",
+        ImageName: "WvW/EBG_Camp_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Harpy veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Harpy_Veteran.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Warg veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Warg_Veteran.jpg"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Wurm veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Wurm_Veteran.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Harpy veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Harpy_Veteran.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Warg veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Warg_Veteran.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Veteran",
+        WaypointCode: "",
+        WaypointName: "Wurm veteran",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Wurm_Veteran.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Keep",
+        WaypointCode: "",
+        WaypointName: "Keep capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Keep_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Keep",
+        WaypointCode: "",
+        WaypointName: "Keep capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Keep_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Eternal Battleground",
+        Type: "WvW Keep",
+        WaypointCode: "",
+        WaypointName: "Keep capturer",
+        GatheringItem: "",
+        ImageName: "WvW/EBG_Keep_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Land Claimer",
+        WaypointCode: "",
+        WaypointName: "Land claimer",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Land_Claimer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battleground",
+        Type: "WvW Land Claimer",
+        WaypointCode: "",
+        WaypointName: "Land claimer",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Land_Claimer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Eternal Battleground",
+        Type: "WvW Land Claimer",
+        WaypointCode: "",
+        WaypointName: "Land claimer",
+        GatheringItem: "",
+        ImageName: "WvW/EBG_Land_Claimer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Both Alpine Battlegrounds",
+        Type: "WvW Tower",
+        WaypointCode: "",
+        WaypointName: "Tower capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Alpine_Tower_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Desert Battlegrounds",
+        Type: "WvW Tower",
+        WaypointCode: "",
+        WaypointName: "Tower capturer",
+        GatheringItem: "",
+        ImageName: "WvW/Desert_Tower_Capturer.png"
+      },
+      {
+        Area: "WvW",
+        MapName: "Eternal Battlegrounds",
+        Type: "WvW Tower",
+        WaypointCode: "",
+        WaypointName: "Tower capturer",
+        GatheringItem: "",
+        ImageName: "WvW/EBG_Tower_Capturer.png"
+      },
       {
         Area: "Fractals of the Mists",
         MapName: "Volcanic",

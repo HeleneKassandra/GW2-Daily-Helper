@@ -31,6 +31,8 @@ class App extends Component {
       {name: "WvW Veteran", value: "WvW Veteran"},
       {name: "WvW Caravan", value: "WvW Caravan"},
       {name: "WvW Camp", value: "WvW Camp"},
+      {name: "WvW Keep", value: "WvW Keep"},
+      {name: "WvW Land Claimer", value: "WvW Land Claimer"},
       {name: "WvW Tower", value: "WvW Tower"},
       {name: "Mists Guard", value: "Mists Guard"},
       {name: "Fractal", value: "Fractal" }
