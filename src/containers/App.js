@@ -9,8 +9,8 @@ class App extends Component {
   state = {
     menuOptionChosen: 'PVE',
     filter: {
-      Type: 'ALL',
-      Area: 'ALL',
+      Type: '',
+      Area: '',
       FractalName: ''
     },
     showToday: true,
@@ -108,17 +108,23 @@ class App extends Component {
        return result.json();
      }).then(data => {
        data.map((item) => {
-         if(pveIds.includes(item.id)){
-            return pveDaily.push(item);
+         if(this.state.typeOptionsList.find(x => x.name === "Fractal") &&  this.state.areaOptionList.find(x => x.name === "Fractals of the Mists")){
+           if(fractalIds.includes(item.id) && item.name.includes("Tier 4")){
+            return fractalDaily.push(item);
+           }
          }
-         if(wvwIds.includes(item.id)){
-           return wvwDaily.push(item);
+         if(this.state.typeOptionsList.find(x => item.name.includes(x.value)) && (this.state.areaOptionList.find(x => item.requirement.includes(x.name)) || this.state.areaOptionList.find(x => item.name.includes(x.name)))){
+           if(pveIds.includes(item.id)){
+              return pveDaily.push(item);
+           }
+           if(wvwIds.includes(item.id)){
+             return wvwDaily.push(item);
+           }
+           return null;
          }
-         if(fractalIds.includes(item.id) && item.name.includes("Tier 4")){
-          return fractalDaily.push(item);
-         }
+
          return null;
-       })
+       });
 
        if(tomorrow){
          this.setState({
@@ -179,13 +185,19 @@ class App extends Component {
          menuOptionChosen: item,
          filter: {
            Type: 'ALL',
-           Area: 'ALL'
+           Area: 'ALL',
+          FractalName: ''
          }
      });
    }
    else {
      this.setState({
-         menuOptionChosen: item
+         menuOptionChosen: item,
+         filter: {
+           Type: '',
+           Area: '',
+           FractalName: ''
+         }
      });
    }
   };
