@@ -44,6 +44,9 @@ switch(props.iconfor){
   case "Waypoint":
     image =  <img src={images['waypointIcon.png']} alt="Waypoint icon" style={style}/>
   break;
+  case "WvW":
+    image = <img src={images['Event_Keep.png']} alt="WvW icon" style={style}/>
+  break;
   case "Fractal":
     image =  null;
   break;

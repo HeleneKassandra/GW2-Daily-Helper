@@ -16,6 +16,16 @@ const resultItem = (props) => {
 
   const iconfor = props.location.Type === "Minidungeon" ? "Reward" : props.location.Type;
 
+  const showGatheringItem =  props.location.Type === "Fractal" || props.location.Type.includes("WvW") ? null :
+    <div className="resultItem--content-gatheringItemContainer">
+      <IconSelecter iconfor={iconfor} />
+      <div>
+        {props.location.GatheringItem}
+      </div>
+    </div>;
+
+  const showClickToCopy = props.location.Type.includes("WvW") ? null : <span className="resultItem--content--WaypointCopyInfo"> - Click to copy</span>;
+  const waypointIconOrWvWIcon = props.location.Type.includes("WvW") ?  <IconSelecter iconfor="WvW" /> : <IconSelecter iconfor="Waypoint" />;
   return (
     <div className="resultItem--container">
       <div className="resultItem-image--Container">
@@ -23,21 +33,16 @@ const resultItem = (props) => {
       <h3 className="resultItem-mapname">{props.location.MapName}</h3>
       </div>
       <div className="resultItem--content">
-        <IconSelecter iconfor="Waypoint" />
+        {waypointIconOrWvWIcon}
         <div>
           <strong>{props.location.WaypointName}</strong>
           <div>
             <Clipboard component="strong" className="resultItem--content-WaypointCode" onSuccess={onSuccess} data-clipboard-text={props.location.WaypointCode}>{props.location.WaypointCode}</Clipboard>
-            <span className="resultItem--content--WaypointCopyInfo"> - Click to copy</span>
+            {showClickToCopy}
           </div>
         </div>
 
-        <div className="resultItem--content-gatheringItemContainer">
-          <IconSelecter iconfor={iconfor} />
-          <div>
-            {props.location.GatheringItem}
-          </div>
-        </div>
+        {showGatheringItem}
       </div>
     </div>
 
