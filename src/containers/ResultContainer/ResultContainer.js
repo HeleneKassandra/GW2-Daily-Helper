@@ -1134,7 +1134,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "Fractals of the Mists",
-          MapName: "Chaos Isles",
+          MapName: "Chaos",
           Type: "Fractal",
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
@@ -1481,7 +1481,7 @@ const resultContainer = (props) => {
       },
       {
         Area: "Fractals of the Mists",
-        MapName: "Chaos Isles",
+        MapName: "Chaos",
         Type: "Fractal",
         WaypointCode: "[&BDAEAAA=]",
         WaypointName: "Fort Marriner Waypoint",

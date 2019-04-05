@@ -27,7 +27,6 @@ class App extends Component {
       {name: "Lumberer", value: "Lumberer"},
       {name: "Vista Viewer", value: "Vista Viewer"},
       {name: "Minidungeon", value: "Minidungeon"},
-      {name: "Event Completer", value: "Event Completer"},
       {name: "WvW Veteran", value: "WvW Veteran"},
       {name: "WvW Caravan", value: "WvW Caravan"},
       {name: "WvW Camp", value: "WvW Camp"},
@@ -64,7 +63,7 @@ class App extends Component {
       {name: "Molten Boss", value: "Molten Boss"},
       {name: "Deepstone", value: "Deepstone"},
       {name: "Siren's Reef", value: "Siren's Reef" },
-      {name: "Chaos Isles", value: "Chaos Isles" },
+      {name: "Chaos", value: "Chaos" },
       {name: "Aetherblade", value: "Aetherblade" },
       {name: "Thaumanova Reactor", value: "Thaurmanova Reactor" },
       {name: "Twilight Oasis", value: "Twilight Oasis" },
@@ -178,6 +177,8 @@ class App extends Component {
        }
      })
    }
+
+   {/* Add function to scroll to result container */}
  }
  changeMenuOptionChoosenHandler = (item) => {
    if(item === 'SEARCH'){
