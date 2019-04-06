@@ -13,7 +13,15 @@ const dailyItemContainer = (props) => {
         dailyArea = props.state.areaOptionList.find(x => item.name.includes(x.name));
     }
     dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
-    return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily}/> : null;
+    return dailyType && dailyArea ?
+    <DailyItem name={item.name}
+    dailyType={dailyType}
+    dailyArea={dailyArea}
+    dailyFractalName={dailyFractal}
+    key={item.id}
+    filteronDaily={props.filteronDaily}
+    setActiveDaily={props.setActiveDaily}
+    isActiveDaily={props.isActiveDaily}/> : null;
 
   }
   if(props.state.showToday){
@@ -34,7 +42,7 @@ const dailyItemContainer = (props) => {
         dailyType = props.state.typeOptionsList.find(x => x.name === "Fractal");
         dailyArea = props.state.areaOptionList.find(x => x.name === "Fractals of the Mists");
         dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
-        return dailyType && dailyArea  ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea} dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily}/> : null;
+        return dailyType && dailyArea  ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea} dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
       });
 
       default:
@@ -50,14 +58,14 @@ const dailyItemContainer = (props) => {
         if(!dailyArea){
             dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name));
         }
-        return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily}/> : null;
+        return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
     });
 
       case "WVW":
       return props.state.TmrdailyWvW.map(item => {
         dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name));
         dailyArea = props.state.areaOptionList.find(x => x.name === "WvW");
-        return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily}/> : null;
+        return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
       });
 
       case "FRACTAL":
@@ -65,7 +73,7 @@ const dailyItemContainer = (props) => {
         dailyType = props.state.typeOptionsList.find(x => x.name === "Fractal");
         dailyArea = props.state.areaOptionList.find(x => x.name === "Fractals of the Mists");
         dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
-        return dailyType && dailyArea  && dailyFractal ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea} dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily}/> : null;
+        return dailyType && dailyArea  && dailyFractal ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea} dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
       });
 
       default:
