@@ -15,8 +15,12 @@
   grid-template-rows: auto fit-content(30%);
   grid-row-gap: 0.5rem;
   justify-items: center;
+  cursor: pointer;
 }
 
+.navbar--item:hover{
+  color: #c748bb;
+}
 .navbar--item-active {
   color: #48c5c7;
 }

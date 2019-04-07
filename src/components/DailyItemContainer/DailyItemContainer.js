@@ -32,7 +32,7 @@ const dailyItemContainer = (props) => {
       });
       case "WVW":
       if(props.state.dailyWvW.length <= 0){
-        return "There is no WvW dailies, this site can help with - yet!";
+        return "There are no WvW dailies this site can help with - yet!";
       }
       return props.state.dailyWvW.map(item => {
           return findInOptionLists(item);
@@ -63,7 +63,7 @@ const dailyItemContainer = (props) => {
 
       case "WVW":
       if(props.state.TmrdailyWvW.length <= 0){
-        return "There is no WvW dailies, this site can help with - yet!";
+        return "There are no WvW dailies this site can help with - yet!";
       }
       else {
         return props.state.TmrdailyWvW.map(item => {

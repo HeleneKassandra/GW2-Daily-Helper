@@ -47,8 +47,26 @@ switch(props.iconfor){
   case "WvW":
     image = <img src={images['Event_Keep.png']} alt="WvW icon" style={style}/>
   break;
+  case "WvW Keep":
+    image = <img src={images['Event_Keep.png']} alt="WvW icon" style={style}/>
+  break;
+  case "WvW Land Claimer":
+    image = <img src={images['Event_flag.png']} alt="WvW Land claimer icon" style={style}/>
+  break;
+  case "WvW Tower":
+    image = <img src={images['Event_Tower.png']} alt="WvW Tower icon" style={style}/>
+  break;
+  case "WvW Veteran":
+    image = <img src={images['Event_boss.png']} alt="WvW Veteran icon" style={style}/>
+  break;
   case "Fractal":
-    image =  null;
+    image =  <img src={images['FractalIcon.png']} alt="Fractal icon" style={style}/>;
+  break;
+  case "Fractals of the Mists":
+    image =  <img src={images['FractalIcon.png']} alt="Fractal icon" style={style}/>;
+  break;
+  case "WvW Camp":
+    image =  <img src={images['Event_Camp.png']} alt="WvW Camp icon" style={style}/>;
   break;
 
   default:

@@ -28,13 +28,12 @@ class App extends Component {
       {name: "Lumberer", value: "Lumberer"},
       {name: "Vista Viewer", value: "Vista Viewer"},
       {name: "Minidungeon", value: "Minidungeon"},
+      {name: "Fractal", value: "Fractal" },
       {name: "WvW Veteran", value: "WvW Veteran"},
       {name: "WvW Camp", value: "WvW Camp"},
       {name: "WvW Keep", value: "WvW Keep"},
       {name: "WvW Land Claimer", value: "WvW Land Claimer"},
-      {name: "WvW Tower", value: "WvW Tower"},
-      {name: "Mists Guard", value: "Mists Guard"},
-      {name: "Fractal", value: "Fractal" }
+      {name: "WvW Tower", value: "WvW Tower"}
     ],
     areaOptionList: [
       {name: "Show all", value: "ALL" },
@@ -186,7 +185,6 @@ isActiveDaily = (dailyname) => {
      })
    }
 
-   {/* Add function to scroll to result container */}
  }
  changeMenuOptionChoosenHandler = (item) => {
    if(item === 'SEARCH'){
@@ -196,7 +194,8 @@ isActiveDaily = (dailyname) => {
            Type: 'ALL',
            Area: 'ALL',
           FractalName: ''
-         }
+        },
+        selectedDaily: ''
      });
    }
    else {
