@@ -11,7 +11,8 @@ const dailyItem = (props) => {
     dailyFractal = props.dailyFractalName.name;
   }
   return(
-      <div className={props.isActiveDaily(props.name) ? "dailySelect--container dailySelect--active"  : "dailySelect--container" } onClick={() => { props.filteronDaily(props.dailyType.name, props.dailyArea.name, dailyFractal, props.name); props.setActiveDaily(props.name); }} >
+      <div className={props.isActiveDaily(props.name) ? "dailySelect--container dailySelect--active"  : "dailySelect--container" }
+      onClick={() => { props.filteronDaily(props.dailyType.name, props.dailyArea.name, dailyFractal, props.name); props.setActiveDaily(props.name); }} >
         <img src={DailyAchievementImg} className="dailySelect-img" alt="Daily achievement icon"/>
         <span>{props.name}</span>
       </div>

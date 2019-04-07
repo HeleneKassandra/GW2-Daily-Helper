@@ -25,6 +25,11 @@
   background-size: cover;
 }
 
+.DailyItem-Container--NoDailyText{
+  margin-top: 0;
+  text-align: center;
+}
+
 /* DESKTOP */
 @media (min-width: 1000px){
   .App {
