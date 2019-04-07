@@ -32,7 +32,7 @@ const dailyItemContainer = (props) => {
       });
       case "WVW":
       if(props.state.dailyWvW.length <= 0){
-        return "There is no WvW dailies, this site can help with";
+        return "There is no WvW dailies, this site can help with - yet!";
       }
       return props.state.dailyWvW.map(item => {
           return findInOptionLists(item);
@@ -62,11 +62,16 @@ const dailyItemContainer = (props) => {
     });
 
       case "WVW":
-      return props.state.TmrdailyWvW.map(item => {
-        dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name));
-        dailyArea = props.state.areaOptionList.find(x => x.name === "WvW");
-        return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
-      });
+      if(props.state.TmrdailyWvW.length <= 0){
+        return "There is no WvW dailies, this site can help with - yet!";
+      }
+      else {
+        return props.state.TmrdailyWvW.map(item => {
+          dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name));
+          dailyArea = props.state.areaOptionList.find(x => x.name === "WvW");
+          return dailyType && dailyArea ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea}  dailyFractalName={dailyFractal}  key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
+        });
+      }
 
       case "FRACTAL":
       return props.state.TmrdailyFractals.map(item => {

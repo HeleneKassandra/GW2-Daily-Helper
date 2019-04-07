@@ -29,7 +29,6 @@ class App extends Component {
       {name: "Vista Viewer", value: "Vista Viewer"},
       {name: "Minidungeon", value: "Minidungeon"},
       {name: "WvW Veteran", value: "WvW Veteran"},
-      {name: "WvW Caravan", value: "WvW Caravan"},
       {name: "WvW Camp", value: "WvW Camp"},
       {name: "WvW Keep", value: "WvW Keep"},
       {name: "WvW Land Claimer", value: "WvW Land Claimer"},
