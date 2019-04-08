@@ -187,18 +187,6 @@ isActiveDaily = (dailyname) => {
 
  }
  changeMenuOptionChoosenHandler = (item) => {
-   if(item === 'SEARCH'){
-     this.setState({
-         menuOptionChosen: item,
-         filter: {
-           Type: 'ALL',
-           Area: 'ALL',
-          FractalName: ''
-        },
-        selectedDaily: ''
-     });
-   }
-   else {
      this.setState({
          menuOptionChosen: item,
          filter: {
@@ -207,25 +195,7 @@ isActiveDaily = (dailyname) => {
            FractalName: ''
          }
      });
-   }
   };
-
- setTypeFilterHandler = (event) => {
-   this.setState({
-     filter: {
-       Type: event.target.value,
-       Area: this.state.filter.Area
-     }
-   });
- }
- setAreaFilterHandler = (event) => {
-   this.setState({
-     filter: {
-       Type: this.state.filter.Type,
-       Area: event.target.value
-     }
-   });
- }
 
   render() {
     return (
@@ -239,8 +209,6 @@ isActiveDaily = (dailyname) => {
             showToday={this.state.showToday}
             changeDay={this.changeDayHandler}
             menuOption={this.state.menuOptionChosen}
-            setTypeFilter={this.setTypeFilterHandler}
-            setAreaFilter={this.setAreaFilterHandler}
             filteronDaily={this.filteronDaily}
             setActiveDaily={this.setActiveDaily}
             isActiveDaily={this.isActiveDaily}/>
