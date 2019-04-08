@@ -5,7 +5,7 @@ import ResultItem from '../../components/ResultItem/ResultItem.js';
 
 const resultContainer = (props) => {
   let locationList = [];
-
+  let filteredLocations = [];
   switch(props.menuOption){
     case 'PVE':
     locationList = [
@@ -1211,38 +1211,44 @@ const resultContainer = (props) => {
     locationList.length = 0;
   };
 
-  const locations = locationList.map((location, index) => {
+locationList.map((location, index) => {
     if(props.filter.Type === 'Fractal' && props.filter.Area === 'Fractals of the Mists'){
         return props.filter.FractalName === location.MapName ?
-        <ResultItem key={index} location={location}/>
-        : null;
+          filteredLocations.push(location)
+        : null
     }
+
     if(props.filter.Type === 'ALL' && props.filter.Area === 'ALL'){
-        return <ResultItem key={index} location={location}/>
+        return filteredLocations.push(location)
     }
 
     if((props.filter.Type === 'ALL' || props.filter.Type === 'NONE' ) && props.filter.Area !== 'ALL'){
         return location.Area === props.filter.Area ?
-        <ResultItem key={index} location={location}/>
+        filteredLocations.push(location)
         : null;
     }
     if(props.filter.Type !== 'ALL' && (props.filter.Area === 'ALL' || props.filter.Area === 'NONE' )){
         return location.Type === props.filter.Type ?
-        <ResultItem key={index} location={location}/>
+        filteredLocations.push(location)
         : null;
     }
     if(props.filter.Type !== 'ALL' && props.filter.Area !== 'ALL'){
         return location.Type === props.filter.Type && location.Area === props.filter.Area ?
-        <ResultItem key={index} location={location}/>
+        filteredLocations.push(location)
         : null;
     }
 
     return null;
   });
 
+  const resultItems =  filteredLocations.map((location, index) => {
+      return <ResultItem key={index} location={location}/>
+  });
+  const noResultsText = filteredLocations.length <= 0 ? <h2>Click on a daily <i className="fas fa-level-up-alt"></i></h2> : null;
   return(
     <div className="resultContainer--container">
-      {locations}
+      {noResultsText}
+      {resultItems}
     </div>
   );
 }
