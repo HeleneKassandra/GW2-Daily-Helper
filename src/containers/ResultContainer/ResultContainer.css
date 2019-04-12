@@ -5,9 +5,13 @@
   padding: 1rem;
 }
 
+.clickOnDailyMsg{
+  grid-column: 1 / span 2;
+}
+
 
 @media (min-width: 800px){
   .resultContainer--container{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
