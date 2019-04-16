@@ -1031,7 +1031,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Volcanic.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1067,7 +1067,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Swampland.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1076,7 +1076,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Cliffside.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1112,7 +1112,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Molten_Boss.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1130,7 +1130,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Sirens_Reef.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1166,7 +1166,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Twilight_Oasis.jpg"
         },
         {
           Area: "Fractals of the Mists",
