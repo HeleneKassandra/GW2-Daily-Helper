@@ -1040,7 +1040,7 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Uncategorized.jpg"
         },
         {
           Area: "Fractals of the Mists",
@@ -1085,7 +1085,8 @@ const resultContainer = (props) => {
           WaypointCode: "[&BDAEAAA=]",
           WaypointName: "Fort Marriner Waypoint",
           GatheringItem: "",
-          ImageName: ""
+          ImageName: "Fractal/Fractal_Aquatic.jpg"
+
         },
         {
           Area: "Fractals of the Mists",
