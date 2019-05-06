@@ -28,17 +28,21 @@ const dailyItemContainer = (props) => {
     isActiveDaily={props.isActiveDaily}/> : null;
 
   }
+
     switch(props.state.menuOptionChosen){
       case "PVE":
-        return dailyPveArray.map(item => {
+        return dailyPveArray.length > 0 ?
+        dailyPveArray.map(item => {
          return findInOptionLists(item);
-      });
+       }) : <span><i className="fas fa-circle-notch fa-spin fa-2x"></i></span>;
+
       case "WVW":
       return dailyWvWArray.length <= 0 ? <p className="DailyItem-Container--NoDailyText">There are no WvW dailies this site can help with - yet!</p> : dailyWvWArray.map(item => {
           return findInOptionLists(item);
       });
       case "FRACTAL":
-      return dailyFractalArray.map(item => {
+      return  dailyFractalArray.length > 0 ?
+      dailyFractalArray.map(item => {
         dailyType = props.state.typeOptionsList.find(x => x.name === "Fractal");
         dailyArea = props.state.areaOptionList.find(x => x.name === "Fractals of the Mists");
 
@@ -51,7 +55,7 @@ const dailyItemContainer = (props) => {
           dailyFractal = props.state.fractalList.find(x => (item.requirement.includes(x.name)));
         }
         return dailyType && dailyArea  ? <DailyItem name={item.name} dailyType={dailyType} dailyArea={dailyArea} dailyFractalName={dailyFractal} key={item.id} filteronDaily={props.filteronDaily} setActiveDaily={props.setActiveDaily} isActiveDaily={props.isActiveDaily}/> : null;
-      });
+      }) : <span><i className="fas fa-circle-notch fa-spin fa-2x"></i></span>;
 
       default:
       return null;
