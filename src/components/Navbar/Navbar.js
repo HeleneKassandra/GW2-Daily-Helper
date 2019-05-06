@@ -13,9 +13,6 @@ const navbar = (props) =>{
         <div className={props.optionChosen === 'WVW' ? 'navbar--item navbar--item-active' :'navbar--item' } onClick={() => props.clicked('WVW')}>
           <i className="fas fa-chess-rook fa-2x"></i>WvW
         </div>
-        <div className={props.optionChosen === 'HOME' ? 'navbar--item navbar--item-active' :'navbar--item' } onClick={() => props.clicked('HOME')}>
-          <i className="fas fa-home fa-2x"></i> Home
-        </div>
       </nav>
   );
 }
