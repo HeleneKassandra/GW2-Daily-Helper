@@ -16,7 +16,7 @@ const dailySelectContainer = (props) => {
       </button>
   );
 
-  const fractalInfo = (props.state.menuOptionChosen === "FRACTAL" ? <span className="dailySelectContainer--fractalinfo">Fractals are the same for all tiers</span> : null);
+  const fractalInfo = (props.state.menuOptionChosen === "FRACTAL" ? <span className="dailySelectContainer--fractalinfo">Non-recommended fractals are the same for all tiers</span> : null);
 
   return (
     <header className={props.state.showToday ? 'dailySelectContainer--container topBanner_blueBg' : 'dailySelectContainer--container topBanner_redBg'}>

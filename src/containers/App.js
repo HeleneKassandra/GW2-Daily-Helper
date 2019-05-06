@@ -49,30 +49,29 @@ class App extends Component {
       {name: "Fractals of the Mists", value: "Fractals of the Mists" }
     ],
     fractalList:[
-      {name: "Show all", value: "ALL" },
-      {name: "Volcanic", value: "Volcanic" },
-      {name: "Uncategorized", value: "Uncategorized"},
-      {name: "Snowblind", value: "Snowblind"},
-      {name: "Urban Battleground", value: "Urban Battleground"},
-      {name: "Swampland", value: "Swampland"},
-      {name: "Cliffside", value: "Cliffside"},
-      {name: "Aquatic Ruins", value: "Aquatic Ruins"},
-      {name: "Underground Facility", value: "Underground Facility"},
-      {name: "Molten Furnace", value: "Molten Furnace"},
-      {name: "Molten Boss", value: "Molten Boss"},
-      {name: "Deepstone", value: "Deepstone"},
-      {name: "Siren's Reef", value: "Siren's Reef" },
-      {name: "Chaos", value: "Chaos" },
-      {name: "Aetherblade", value: "Aetherblade" },
-      {name: "Thaumanova Reactor", value: "Thaurmanova Reactor" },
-      {name: "Twilight Oasis", value: "Twilight Oasis" },
-      {name: "Captain Mai Trin Boss", value: "Captain Mai Trin Boss" },
-      {name: "Solid Ocean", value: "Solid Ocean" },
-      {name: "Nightmare", value: "Nightmare" },
-      {name: "Shattered Observatory", value: "Shattered Observatory" },
+      {name: "Show all", value: "ALL", reclvl: [] },
+      {name: "Volcanic", value: "Volcanic", reclvl: [19, 28, 72] },
+      {name: "Uncategorized", value: "Uncategorized", reclvl: [2, 36]},
+      {name: "Snowblind", value: "Snowblind", reclvl: [27, 68]},
+      {name: "Urban Battleground", value: "Urban Battleground", reclvl: [4, 66, 31]},
+      {name: "Swampland", value: "Swampland", reclvl: [5, 32]},
+      {name: "Cliffside", value: "Cliffside", reclvl: [6, 69]},
+      {name: "Aquatic Ruins", value: "Aquatic Ruins", reclvl: [61]},
+      {name: "Underground Facility", value: "Underground Facility", reclvl: [53, 8]},
+      {name: "Molten Furnace", value: "Molten Furnace", reclvl: [39, 58]},
+      {name: "Molten Boss", value: "Molten Boss", reclvl: [10, 40]},
+      {name: "Deepstone", value: "Deepstone", reclvl: [11, 67]},
+      {name: "Siren's Reef", value: "Siren's Reef", reclvl: [37,12, 54]},
+      {name: "Chaos", value: "Chaos", reclvl: [30] },
+      {name: "Aetherblade", value: "Aetherblade", reclvl: [65,14] },
+      {name: "Thaumanova Reactor", value: "Thaurmanova Reactor", reclvl: [64, 48, 34, 15]},
+      {name: "Twilight Oasis", value: "Twilight Oasis", reclvl: [59,16,41] },
+      {name: "Captain Mai Trin Boss", value: "Captain Mai Trin Boss", reclvl: [18,42] },
+      {name: "Solid Ocean", value: "Solid Ocean", reclvl: [60, 35] },
+      {name: "Nightmare", value: "Nightmare", reclvl: [24] },
+      {name: "Shattered Observatory", value: "Shattered Observatory", reclvl: [25,75]},
     ],
  };
-
 
  getDailyHandler = (tomorrow) => {
    let dailyIdUrl = 'https://api.guildwars2.com/v2/achievements/daily';
@@ -107,7 +106,7 @@ class App extends Component {
      }).then(data => {
        data.map((item) => {
          if(this.state.typeOptionsList.find(x => x.name === "Fractal") &&  this.state.areaOptionList.find(x => x.name === "Fractals of the Mists")){
-           if(fractalIds.includes(item.id) && item.name.includes("Tier 4")){
+           if(fractalIds.includes(item.id) && (item.name.includes("Tier 4") || item.name.includes("Recommended"))){
             return fractalDaily.push(item);
            }
          }
