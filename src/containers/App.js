@@ -73,6 +73,7 @@ class App extends Component {
     ],
  };
 
+ resultRef = React.createRef();
  getDailyHandler = (tomorrow) => {
    let dailyIdUrl = 'https://api.guildwars2.com/v2/achievements/daily';
    if(tomorrow){
@@ -183,8 +184,15 @@ isActiveDaily = (dailyname) => {
        }
      })
    }
-
- }
+   // Timeout is there to trigger scrolling after result has loaded
+   setTimeout(
+    function() {
+        this.resultRef.current.scrollIntoView({behavior: "smooth"});
+    }
+    .bind(this),
+    100
+    );
+}
  changeMenuOptionChoosenHandler = (item) => {
      this.setState({
          menuOptionChosen: item,
@@ -211,7 +219,9 @@ isActiveDaily = (dailyname) => {
             filteronDaily={this.filteronDaily}
             setActiveDaily={this.setActiveDaily}
             isActiveDaily={this.isActiveDaily}/>
-          <ResultContainer filter={this.state.filter} menuOption={this.state.menuOptionChosen}/>
+          <div className="Allresults" ref={this.resultRef}>
+            <ResultContainer filter={this.state.filter} menuOption={this.state.menuOptionChosen}/>
+          </div>
         </div>
       </div>
     );
