@@ -107,7 +107,7 @@ class App extends Component {
        return fractalIds.push(item.id);
      });
 
-     fetch('https://api.guildwars2.com/v2/achievements?ids=' + pveIds.join(',') + wvwIds.join(',')+ fractalIds.join(','))
+     fetch('https://api.guildwars2.com/v2/achievements?ids=' + [...pveIds, ...wvwIds, ...fractalIds])
      .then(result => {
        return result.json();
      }).then(data => {
