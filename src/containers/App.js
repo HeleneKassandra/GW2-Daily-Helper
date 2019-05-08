@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from '../components/Navbar/Navbar.js';
 import TopSectionContainer from './TopSectionContainer/TopSectionContainer.js';
 import ResultContainer from './ResultContainer/ResultContainer';
+import ReactGA from 'react-ga';
 
 
 class App extends Component {
@@ -72,6 +73,11 @@ class App extends Component {
       {name: "Shattered Observatory", value: "Shattered Observatory", reclvl: [25,75]},
     ],
  };
+
+  initializeReactGA = () => {
+   ReactGA.initialize('UA-113563405-1');
+   ReactGA.pageview('/homepage');
+}
 
  resultRef = React.createRef();
  getDailyHandler = (tomorrow) => {
@@ -147,6 +153,7 @@ class App extends Component {
 
  componentDidMount(){
    this.getDailyHandler(false);
+   this.initializeReactGA();
  }
 
  changeDayHandler = () => {
@@ -182,7 +189,7 @@ isActiveDaily = (dailyname) => {
          Area: area,
          FractalName: fractal
        }
-     })
+     });
    }
    // Timeout is there to trigger scrolling after result has loaded
    setTimeout(
@@ -201,6 +208,10 @@ isActiveDaily = (dailyname) => {
            Area: '',
            FractalName: ''
          }
+     });
+     ReactGA.event({
+       category: 'Navigation',
+       action: 'Navigate between Pve, WvW and fractals'
      });
   };
 
