@@ -860,7 +860,7 @@ const resultContainer = (props) => {
       locationList = [
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Camp",
           WaypointCode: "",
           WaypointName: "Camp capturer",
@@ -869,7 +869,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Camp",
           WaypointCode: "",
           WaypointName: "Camp capturer",
@@ -887,7 +887,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Harpy veteran",
@@ -896,7 +896,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Warg veteran",
@@ -905,7 +905,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Wurm veteran",
@@ -914,7 +914,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Harpy veteran",
@@ -923,7 +923,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Warg veteran",
@@ -932,7 +932,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Veteran",
           WaypointCode: "",
           WaypointName: "Wurm veteran",
@@ -941,7 +941,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Keep",
           WaypointCode: "",
           WaypointName: "Keep capturer",
@@ -950,7 +950,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Keep",
           WaypointCode: "",
           WaypointName: "Keep capturer",
@@ -968,7 +968,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Land Claimer",
           WaypointCode: "",
           WaypointName: "Land claimer",
@@ -977,7 +977,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battleground",
+          MapName: "Desert Borderlands",
           Type: "WvW Land Claimer",
           WaypointCode: "",
           WaypointName: "Land claimer",
@@ -995,7 +995,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Both Alpine Battlegrounds",
+          MapName: "Both Alpine Borderlands",
           Type: "WvW Tower",
           WaypointCode: "",
           WaypointName: "Tower capturer",
@@ -1004,7 +1004,7 @@ const resultContainer = (props) => {
         },
         {
           Area: "WvW",
-          MapName: "Desert Battlegrounds",
+          MapName: "Desert Borderlands",
           Type: "WvW Tower",
           WaypointCode: "",
           WaypointName: "Tower capturer",
