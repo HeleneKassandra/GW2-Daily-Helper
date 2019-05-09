@@ -5,6 +5,7 @@ const dailyItemContainer = (props) => {
   let dailyType = "";
   let dailyArea = "";
   let dailyFractal = "";
+  let dailyMinidungeon = "";
   let lvl = null;
   const dailyPveArray = props.state.showToday ? props.state.dailyPve : props.state.TmrdailyPve;
   const dailyWvWArray = props.state.showToday ? props.state.dailyWvW : props.state.TmrdailyWvW;
@@ -12,22 +13,28 @@ const dailyItemContainer = (props) => {
 
   const findInOptionLists = (item) => {
     dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name))
-    dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name));
+    dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name)) ? props.state.areaOptionList.find(x => item.requirement.includes(x.name)) : props.state.areaOptionList.find(x => item.name.includes(x.name));
+
     if(!dailyArea){
-        dailyArea = props.state.areaOptionList.find(x => item.name.includes(x.name));
+      dailyArea = props.state.minidungeonList.find(x => item.name.includes(x.name));
     }
+
+    dailyMinidungeon = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
+
+
     dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
     return dailyType && dailyArea ?
     <DailyItem name={item.name}
     dailyType={dailyType}
     dailyArea={dailyArea}
     dailyFractalName={dailyFractal}
+    dailyMinidungeonName={dailyMinidungeon}
     key={item.id}
     filteronDaily={props.filteronDaily}
     setActiveDaily={props.setActiveDaily}
     isActiveDaily={props.isActiveDaily}/> : null;
 
-  }
+  };
 
     switch(props.state.menuOptionChosen){
       case "PVE":

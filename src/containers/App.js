@@ -12,7 +12,8 @@ class App extends Component {
     filter: {
       Type: '',
       Area: '',
-      FractalName: ''
+      FractalName: '',
+      Minidungeon: ''
     },
     selectedDaily: '',
     showToday: true,
@@ -72,6 +73,21 @@ class App extends Component {
       {name: "Nightmare", value: "Nightmare", reclvl: [24] },
       {name: "Shattered Observatory", value: "Shattered Observatory", reclvl: [25,75]},
     ],
+    minidungeonList: [
+    { name: "Bad Neighborhood", area: "Kryta"},
+    { name: "Goff's Loot", area: "Kryta"},
+    { name: "Forsaken Fortune", area: "Shiverpeaks"},
+    { name: "Windy Cave Treasure", area: "Shiverpeaks"},
+    { name: "Vexa's Lab", area: "Ascalon"},
+    { name: "Ship of Sorrows", area: "Orr"},
+    { name: "Forgotten Stream", area: "Orr"},
+    { name: "Don't Touch the Shiny", area: "Maguuma Jungle"},
+    { name: "Grounded", area: "Orr"},
+    { name: "Magellan's Memento", area: "Shiverpeaks"},
+    { name: "Tears of Itlaocol", area: "Maguuma Jungle"},
+    { name: "Rebel's Seclusion", area: "Ascalon"},
+    { name: "The Long Way Around", area: "Orr"},
+    ],
  };
 
   initializeReactGA = () => {
@@ -85,7 +101,6 @@ class App extends Component {
    if(tomorrow){
      dailyIdUrl = dailyIdUrl + '/tomorrow';
    }
-
 
    fetch(dailyIdUrl)
    .then(result => {
@@ -112,11 +127,14 @@ class App extends Component {
        return result.json();
      }).then(data => {
        data.map((item) => {
-         if(this.state.typeOptionsList.find(x => x.name === "Fractal") &&  this.state.areaOptionList.find(x => x.name === "Fractals of the Mists")){
            if(fractalIds.includes(item.id) && (item.name.includes("Tier 4") || item.name.includes("Recommended"))){
             return fractalDaily.push(item);
            }
-         }
+
+           if(pveIds.includes(item.id) && item.name.includes("Minidungeon")){
+              pveDaily.push(item);
+           }
+
          if(this.state.typeOptionsList.find(x => item.name.includes(x.value)) && (this.state.areaOptionList.find(x => item.requirement.includes(x.name)) || this.state.areaOptionList.find(x => item.name.includes(x.name)))){
            if(pveIds.includes(item.id)){
               return pveDaily.push(item);
@@ -173,12 +191,14 @@ isActiveDaily = (dailyname) => {
   return this.state.selectedDaily === dailyname;
 };
 
- filteronDaily = (type, area, fractal) => {
-   if(!fractal){
+ filteronDaily = (type, area, fractal, minidungeon) => {
+   if(fractal){
      this.setState({
        filter: {
          Type: type,
          Area: area,
+         FractalName: fractal,
+         Minidungeon: '',
        }
      })
    }
@@ -187,7 +207,8 @@ isActiveDaily = (dailyname) => {
        filter: {
          Type: type,
          Area: area,
-         FractalName: fractal
+         FractalName: '',
+         Minidungeon: minidungeon,
        }
      });
    }

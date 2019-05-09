@@ -730,7 +730,7 @@ const resultContainer = (props) => {
            WaypointName: "Ojon's Lumbermill Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Bad_Neighborhood.jpg",
-           "Description": "<strong>Getting there:</strong><br>Look for a door embedded in the wall that is guarded by three bandits, and interact with it to enter the mini-dungeon.<br><br><strong>Walkthrough:</strong><br>Enter the cave and either fight your way or run to the Splendid Chest, guarded by a Veteran Bandit Saboteur, to get the achievement. To leave, run up the hill behind the chest and use the Door to exit the cave.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Bad_Neighborhood' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>Look for a door embedded in the wall that is guarded by three bandits, and interact with it to enter the mini-dungeon.<br><br><strong>Walkthrough:</strong><br>Enter the cave and either fight your way or run to the Splendid Chest, guarded by a Veteran Bandit Saboteur, to get the achievement. To leave, run up the hill behind the chest and use the Door to exit the cave.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Bad_Neighborhood' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Kryta",
@@ -740,7 +740,7 @@ const resultContainer = (props) => {
            WaypointName: "Gap Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Goffs_loot.jpg",
-           "Description": "<strong>Getting there:</strong><br>The entrance is at Earthlord's Gap, directly north of Gap Waypoint at the Goff's Bandits point of interest.<br><br><strong>Walkthrough:</strong><br>Fight your way through the bandits to the cage door at the back of the cave. Activating the door releases the two Veteran Cave Trolls. When these are both defeated, the door opens and you get the achievement when you reach the chest.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Goff%27s_Loot' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>The entrance is at Earthlord's Gap, directly north of Gap Waypoint at the Goff's Bandits point of interest.<br><br><strong>Walkthrough:</strong><br>Fight your way through the bandits to the cage door at the back of the cave. Activating the door releases the two Veteran Cave Trolls. When these are both defeated, the door opens and you get the achievement when you reach the chest.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Goff%27s_Loot' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Shiverpeaks",
@@ -750,7 +750,7 @@ const resultContainer = (props) => {
            WaypointName: "Wyrmblood Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Forsaken_Fortune.jpg",
-           "Description": "<strong>Getting there:</strong><br>To begin the mini-dungeon, go to Wyrmblood Waypoint and travel west to inspect the Sealed Dwarven Door. If you cannot interact with the door, it has not yet finished its 20 minute reset from the last event.<br><br> A note on the door directs you to Travelen's Steading to the northeast. There, speak to Gerrvid who tells you to read the 3 books in front of him (Working with Deldrimor Steel, Dwarven Defensive Strategies, and Lost Treasures of the Dwarven World).<br><br>After you do, speak with Gerrvid again to tell him you solved the riddle. This triggers the event Escort Gerrvid to the dwarven ruins to lead Gerrvid back to the door, which he will then open so you can enter the Forsaken Halls. This mini-dungeon consists of 3 sections. <br><br><strong>Walkthrough</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Forsaken_Fortune' target='_blank'>Guild Wars 2 Wiki</a>"
+          Description: "<strong>Getting there:</strong><br>To begin the mini-dungeon, go to Wyrmblood Waypoint and travel west to inspect the Sealed Dwarven Door. If you cannot interact with the door, it has not yet finished its 20 minute reset from the last event.<br><br> A note on the door directs you to Travelen's Steading to the northeast. There, speak to Gerrvid who tells you to read the 3 books in front of him (Working with Deldrimor Steel, Dwarven Defensive Strategies, and Lost Treasures of the Dwarven World).<br><br>After you do, speak with Gerrvid again to tell him you solved the riddle. This triggers the event Escort Gerrvid to the dwarven ruins to lead Gerrvid back to the door, which he will then open so you can enter the Forsaken Halls. This mini-dungeon consists of 3 sections. <br><br><strong>Walkthrough</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Forsaken_Fortune' target='_blank'>Guild Wars 2 Wiki</a>"
          },
          {
            Area: "Shiverpeaks",
@@ -760,7 +760,7 @@ const resultContainer = (props) => {
            WaypointName: "Mistriven Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Windy_Cave_Treasure.jpg",
-           "Description": "<strong>Getting there:</strong><br>Heading south of the Mistriven Waypoint, make a right going west. The entrance to the cave has a stone wall on the right with some ooze inside the entrance.<br><br><strong>Walkthrough:</strong><br>Making your way up wooden platforms and parts of the wall is needed to advance. There are many enemies in the cave, and many veteran enemies, so it is best to complete this challenge with a party or at higher levels with a durable character. You will know you are going in the correct direction if you continue to see ooze and veteran ooze along the path. You'll know you're at the end of the mini-dungeon when you go down a set of stairs where a veteran ooze and a Grand Chest are located.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Windy_Cave_Treasure' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>Heading south of the Mistriven Waypoint, make a right going west. The entrance to the cave has a stone wall on the right with some ooze inside the entrance.<br><br><strong>Walkthrough:</strong><br>Making your way up wooden platforms and parts of the wall is needed to advance. There are many enemies in the cave, and many veteran enemies, so it is best to complete this challenge with a party or at higher levels with a durable character. You will know you are going in the correct direction if you continue to see ooze and veteran ooze along the path. You'll know you're at the end of the mini-dungeon when you go down a set of stairs where a veteran ooze and a Grand Chest are located.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Windy_Cave_Treasure' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Ascalon",
@@ -770,7 +770,7 @@ const resultContainer = (props) => {
            WaypointName: "Breaktooth's Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Vexa_lab.jpg",
-           "Description": "<strong>Getting there:</strong><br>The portal entrance is found near the vista west of Breaktooth's Waypoint in the western most part of the Sloven Pitch. Just west of this vista is a cave pouring out a lava stream. Approach it from the West. Inside this cave are platforms that phase in and out. Wait for the platforms to phase in then jump and follow them into the cave.<br><br> The platforms will phase out after some time, potentially dropping you into the lava below and forcing you to start from the beginning. If the platforms phase out, you can remain on them by staying on their frame-like edges. Alternatively use a Skimmer. At the end of the path of platforms, you'll reach a portal that will take you to Vexa's Lab<br><br><strong>Walkthrough</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Vexa%27s_Lab' target='_blank'>Guild Wars 2 Wiki</a>"
+          Description: "<strong>Getting there:</strong><br>The portal entrance is found near the vista west of Breaktooth's Waypoint in the western most part of the Sloven Pitch. Just west of this vista is a cave pouring out a lava stream. Approach it from the West. Inside this cave are platforms that phase in and out. Wait for the platforms to phase in then jump and follow them into the cave.<br><br> The platforms will phase out after some time, potentially dropping you into the lava below and forcing you to start from the beginning. If the platforms phase out, you can remain on them by staying on their frame-like edges. Alternatively use a Skimmer. At the end of the path of platforms, you'll reach a portal that will take you to Vexa's Lab<br><br><strong>Walkthrough</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Vexa%27s_Lab' target='_blank'>Guild Wars 2 Wiki</a>"
          },
          {
            Area: "Orr",
@@ -780,7 +780,7 @@ const resultContainer = (props) => {
            WaypointName: "Dire Shoal Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Ship_of_Sorrows.jpg",
-           "Description": "<strong>Getting there:</strong><br>The mini-dungeon is in a sunken ship west of the Plaza of Lost Wisdom.<br><br><strong>Walkthrough:</strong><br>You can either enter the ship via a hole in the top 'roof' deck or a 'window' to the deck or approach the sunken ship from the southeast and head through a hole in the side of the ship; in the center of the deck will be an open hatch/stairwell into the hold of the ship that you will need to enter. The interior can be quite disorienting due to the tight viewpoint combined with the angle and tilt of the wreck. <br><br>Once at the bottom, turn left and left again so that you are pointing to the southwest, then go all the way to the end of the corridor, turn left, and then turn right down another set of stairs. Turn right twice so that you are pointing northeast along the ship, and continue to the far end of the room where the chest should be located, tucked away in the the back corner on the right. The chest is surrounded by some purple lighting effects, various objects, and angles upwards from your entry point to the chamber. You do not need to loot the chest in order to get the achievement, but if you wish to do so bring a friend, as the room with the chest has several Risen Pirates that re-spawn quickly. <br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Ship_of_Sorrows' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>The mini-dungeon is in a sunken ship west of the Plaza of Lost Wisdom.<br><br><strong>Walkthrough:</strong><br>You can either enter the ship via a hole in the top 'roof' deck or a 'window' to the deck or approach the sunken ship from the southeast and head through a hole in the side of the ship; in the center of the deck will be an open hatch/stairwell into the hold of the ship that you will need to enter. The interior can be quite disorienting due to the tight viewpoint combined with the angle and tilt of the wreck. <br><br>Once at the bottom, turn left and left again so that you are pointing to the southwest, then go all the way to the end of the corridor, turn left, and then turn right down another set of stairs. Turn right twice so that you are pointing northeast along the ship, and continue to the far end of the room where the chest should be located, tucked away in the the back corner on the right. The chest is surrounded by some purple lighting effects, various objects, and angles upwards from your entry point to the chamber. You do not need to loot the chest in order to get the achievement, but if you wish to do so bring a friend, as the room with the chest has several Risen Pirates that re-spawn quickly. <br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Ship_of_Sorrows' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Orr",
@@ -790,7 +790,7 @@ const resultContainer = (props) => {
            WaypointName: "Verdance Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Forgotten_Stream.jpg",
-           "Description": "<strong>Getting there:</strong><br>Starting at Verdance Waypoint in the Cathedral of Verdance head north-east into the water. Swim under the wreckage directly ahead and you should surface in a large tunnel.<br><br><strong>Walkthrough:</strong><br>This mini-dungeon is straightforward: run through the tunnel past the enemies until you get to the locked door at the end. The foes are mostly Orrian Spectral weapons and Risen, many of whom use AoE attacks, and if you do not have any sort of stealth, will likely need to fight through many to reach the end of the corridor. If you do not have the achievement for the mini dungeon, it is awarded just before arriving at the closed door at the far end.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Forgotten_Stream' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>Starting at Verdance Waypoint in the Cathedral of Verdance head north-east into the water. Swim under the wreckage directly ahead and you should surface in a large tunnel.<br><br><strong>Walkthrough:</strong><br>This mini-dungeon is straightforward: run through the tunnel past the enemies until you get to the locked door at the end. The foes are mostly Orrian Spectral weapons and Risen, many of whom use AoE attacks, and if you do not have any sort of stealth, will likely need to fight through many to reach the end of the corridor. If you do not have the achievement for the mini dungeon, it is awarded just before arriving at the closed door at the far end.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Forgotten_Stream' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Maguuma Jungle",
@@ -800,7 +800,7 @@ const resultContainer = (props) => {
            WaypointName: "Mabon Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Dont_Touch_the_Shiny.jpg",
-           "Description": "<strong>Getting there:</strong><br>The entrance to the mini-dungeon is north of Mabon Waypoint in a skritt cave in Ruins of the Unseen (the entrance is above the last 'n' of 'Unseen' on the map).<br><br><strong>Walkthrough:</strong><br>An electrical orb lies on a pedestal to the right as you enter, and a 'door' made of multicolored metal sheets can be found on the left side of the cave. To enter the sealed room, grab the orb and use the skill it provides you at the door. If you have not killed the numerous and fast-respawning skritt in the cave before attempting the door, and you have auto-targeting enabled, you should face the door and press the forward key while using the orb's skill, otherwise you will throw the orb on a nearby skritt rather than the door. Beyond the door is a chamber with several peaceful Eye of the Unseen golems and a Splendid Chest that can be opened safely.<br><br> To get the achievement, interact with the Sacred Skritt Shiny in front of the chest and select the response with the crossed swords to break it. Doing so will cause all the golems to become hostile and attack you, and it will also cause some electrical currents to flow down from the ceiling at intervals, making some areas unsafe to stand in. The space behind the chest is safe. There are 10 golems in the chamber, all level 15, while you will only be level 13, making this a potentially difficult fight. They can be pulled in smaller groups if you run to fight behind the chest after breaking the Shiny. Alternatively, players can avoid the golems and simply run out; killing them is not necessary to get the achievement.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Don%27t_Touch_the_Shiny' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>The entrance to the mini-dungeon is north of Mabon Waypoint in a skritt cave in Ruins of the Unseen (the entrance is above the last 'n' of 'Unseen' on the map).<br><br><strong>Walkthrough:</strong><br>An electrical orb lies on a pedestal to the right as you enter, and a 'door' made of multicolored metal sheets can be found on the left side of the cave. To enter the sealed room, grab the orb and use the skill it provides you at the door. If you have not killed the numerous and fast-respawning skritt in the cave before attempting the door, and you have auto-targeting enabled, you should face the door and press the forward key while using the orb's skill, otherwise you will throw the orb on a nearby skritt rather than the door. Beyond the door is a chamber with several peaceful Eye of the Unseen golems and a Splendid Chest that can be opened safely.<br><br> To get the achievement, interact with the Sacred Skritt Shiny in front of the chest and select the response with the crossed swords to break it. Doing so will cause all the golems to become hostile and attack you, and it will also cause some electrical currents to flow down from the ceiling at intervals, making some areas unsafe to stand in. The space behind the chest is safe. There are 10 golems in the chamber, all level 15, while you will only be level 13, making this a potentially difficult fight. They can be pulled in smaller groups if you run to fight behind the chest after breaking the Shiny. Alternatively, players can avoid the golems and simply run out; killing them is not necessary to get the achievement.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Don%27t_Touch_the_Shiny' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Orr",
@@ -810,7 +810,7 @@ const resultContainer = (props) => {
            WaypointName: "Shipwreck Rock Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Grounded.jpg",
-           "Description": "<strong>Getting there:</strong><br>From the Shipwreck Rock Waypoint, head northwest until the shipwreck is on your left.<br><br><strong>Walkthrough:</strong><br>Walk carefully up one of the masts leaning against the wreck, and jump down onto the deck. In the center of the deck is an open hatch - head due northwest until you reach the far end of the ship, at which point another set of stairs leads down into the hold. The achievement should appear when you stand roughly in the middle of the hold area, likely among an assortment of risen pirates.<br><br> Additionally, it can also be obtained by walking against the outside rock wall below ship directly south west of the point of interest.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Grounded_(mini-dungeon)' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>From the Shipwreck Rock Waypoint, head northwest until the shipwreck is on your left.<br><br><strong>Walkthrough:</strong><br>Walk carefully up one of the masts leaning against the wreck, and jump down onto the deck. In the center of the deck is an open hatch - head due northwest until you reach the far end of the ship, at which point another set of stairs leads down into the hold. The achievement should appear when you stand roughly in the middle of the hold area, likely among an assortment of risen pirates.<br><br> Additionally, it can also be obtained by walking against the outside rock wall below ship directly south west of the point of interest.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Grounded_(mini-dungeon)' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Shiverpeaks",
@@ -820,7 +820,7 @@ const resultContainer = (props) => {
            WaypointName: "Arundon Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Magellans_Memento.jpg",
-           "Description": "<strong>Getting there:</strong><br>Proceed north and east from Arundon Waypoint to Safewatch Vale and then further east in the direction of Offering Stone. The cave entrance is in the mountainside midway between the two points of interest.<br><br><strong>Walkthrough</strong><br>Make your way through the cave avoiding traps and multiple veteran Grawl. Along the way you will see notes written by Francis Magellan about a treasure at the end of this cave. The achievement is earned upon getting to the chest of riches that doomed Francis Magellan. There will be many oozes at the end of the cave, with a few veteran oozes. The Grand Chest is guarded by a Champion Giant Blue Ooze, which can be avoided if you are careful.<br><br>If you have a Springer mount, you can skip the minidungeon entirely by jumping up to the chest from the southwest of Safewatch Vale.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Magellan%27s_Memento' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>Proceed north and east from Arundon Waypoint to Safewatch Vale and then further east in the direction of Offering Stone. The cave entrance is in the mountainside midway between the two points of interest.<br><br><strong>Walkthrough</strong><br>Make your way through the cave avoiding traps and multiple veteran Grawl. Along the way you will see notes written by Francis Magellan about a treasure at the end of this cave. The achievement is earned upon getting to the chest of riches that doomed Francis Magellan. There will be many oozes at the end of the cave, with a few veteran oozes. The Grand Chest is guarded by a Champion Giant Blue Ooze, which can be avoided if you are careful.<br><br>If you have a Springer mount, you can skip the minidungeon entirely by jumping up to the chest from the southwest of Safewatch Vale.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Magellan%27s_Memento' target='_blank'>Guild Wars 2 Wiki</a></i>"
          },
          {
            Area: "Maguuma Jungle",
@@ -830,7 +830,7 @@ const resultContainer = (props) => {
            WaypointName: "Falias Thorp Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Tears_of_Itlaocol.jpg",
-           "Description": "<strong>Getting there:</strong><br>The mini-dungeon entrance is south of the Falias Thorp Waypoint at the Dengatl Grounds, behind the veteran hylek chief. A large gong can be found above and to the right of one of the gates. Sounding the gong by means of throwing a boulder at it will open the gates (targeting the gong is easiest using action camera / by switching autotargeting off).<br><br><strong>Walkthrough:</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Tears_of_Itlaocol' target='_blank'>Guild Wars 2 Wiki</a>"
+          Description: "<strong>Getting there:</strong><br>The mini-dungeon entrance is south of the Falias Thorp Waypoint at the Dengatl Grounds, behind the veteran hylek chief. A large gong can be found above and to the right of one of the gates. Sounding the gong by means of throwing a boulder at it will open the gates (targeting the gong is easiest using action camera / by switching autotargeting off).<br><br><strong>Walkthrough:</strong><br><i>For full walkthrough visit: <a href='https://wiki.guildwars2.com/wiki/Tears_of_Itlaocol' target='_blank'>Guild Wars 2 Wiki</a>"
          },
          {
            Area: "Ascalon",
@@ -840,7 +840,7 @@ const resultContainer = (props) => {
            WaypointName: "Breaktooth's Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Rebels_Seclusion.jpg",
-           "Description": "<strong>Getting there:</strong><br>The mini-dungeon is located just southeast of Breaktooth's Waypoint, visible on the map as Rebel's Seclusion. To reach the entrance, travel northeast from the Waypoint initially, taking your first right.<br><br><strong>Walkthrough:</strong><br>Navigate the canyon to reach the chest. You can either fight or run through the mobs (most are normal mobs). The chest and Rebel’s Seclusion achievement is located a on top of a hill guarded by Veteran Ascalonian Enchanter.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Rebel%27s_Seclusion' target='_blank'>Guild Wars 2 Wiki</a> and <a href='http://dulfy.net/2012/10/25/gw2-rebels-seclusion-achievement-guide/' target='_blank'>Dulfy</a></i>"
+          Description: "<strong>Getting there:</strong><br>The mini-dungeon is located just southeast of Breaktooth's Waypoint, visible on the map as Rebel's Seclusion. To reach the entrance, travel northeast from the Waypoint initially, taking your first right.<br><br><strong>Walkthrough:</strong><br>Navigate the canyon to reach the chest. You can either fight or run through the mobs (most are normal mobs). The chest and Rebel’s Seclusion achievement is located a on top of a hill guarded by Veteran Ascalonian Enchanter.<br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/Rebel%27s_Seclusion' target='_blank'>Guild Wars 2 Wiki</a> and <a href='http://dulfy.net/2012/10/25/gw2-rebels-seclusion-achievement-guide/' target='_blank'>Dulfy</a></i>"
          },
          {
            Area: "Orr",
@@ -850,7 +850,7 @@ const resultContainer = (props) => {
            WaypointName: "Vesper Bell Waypoint",
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Long_Way_Around.jpg",
-           "Description": "<strong>Getting there:</strong><br>The cavern entrance is located east of Vesper Bell Waypoint, around the center of the triangle made up of three small islands in Terzetto Bay. The entrance can be seen by looking to the south-east at the bottom of the shallow bay.<br><br><strong>Walkthrough</strong><br>You will have 5 minutes to deactivate the six Asuran Data Pad (as the 1st pad will reset in 5 minutes), dispersed throughout the cavern, mostly around floor level, with the first two being high on the left wall of the entrance tunnel. Deactivating all six will open the gate and allow you to reach Scholar Fryxx and the Grand Chest next to him, earning the achievement. You will need to deactivate all of them while avoiding getting hit by the Risen Hands and dead fish.<br><br> If you are hit by a hand or fish, you will have the effect Covered in Corruption applied to you and you will not be able to activate any Data Pads, so you will need to go back to Explorer Camelia to have it removed. The cavern itself is roughly in the form of an L-shaped tunnel which turns left towards the Gate. The Risen Hands are located on the floors, walls and ceiling of the cavern; sometimes hidden behind columns, and both they and the fish are immune to damage and cannot be destroyed. <br><br>The greenish substance shot by the Risen Hands explodes into an AoE on contact and could end up contaminating you even while hiding behind columns, so it is best to keep moving to avoid the slow-moving shots, as the damage is negligible and the shots can be blocked, such as with aegis. However the contamination from fish cannot be blocked so give them as wide a berth as possible. Tour the cavern to determine the location of each of the data pads before you attempt to trigger the data pads. All of the data pads do not have to be triggered between each cleansing. The most difficult data pad to access is the second one from the end that is surrounded by dead fish. If you get that one first then the others are reasonably easy to get within the 5 minute limit. <br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/The_Long_Way_Around' target='_blank'>Guild Wars 2 Wiki</a></i>"
+          Description: "<strong>Getting there:</strong><br>The cavern entrance is located east of Vesper Bell Waypoint, around the center of the triangle made up of three small islands in Terzetto Bay. The entrance can be seen by looking to the south-east at the bottom of the shallow bay.<br><br><strong>Walkthrough</strong><br>You will have 5 minutes to deactivate the six Asuran Data Pad (as the 1st pad will reset in 5 minutes), dispersed throughout the cavern, mostly around floor level, with the first two being high on the left wall of the entrance tunnel. Deactivating all six will open the gate and allow you to reach Scholar Fryxx and the Grand Chest next to him, earning the achievement. You will need to deactivate all of them while avoiding getting hit by the Risen Hands and dead fish.<br><br> If you are hit by a hand or fish, you will have the effect Covered in Corruption applied to you and you will not be able to activate any Data Pads, so you will need to go back to Explorer Camelia to have it removed. The cavern itself is roughly in the form of an L-shaped tunnel which turns left towards the Gate. The Risen Hands are located on the floors, walls and ceiling of the cavern; sometimes hidden behind columns, and both they and the fish are immune to damage and cannot be destroyed. <br><br>The greenish substance shot by the Risen Hands explodes into an AoE on contact and could end up contaminating you even while hiding behind columns, so it is best to keep moving to avoid the slow-moving shots, as the damage is negligible and the shots can be blocked, such as with aegis. However the contamination from fish cannot be blocked so give them as wide a berth as possible. Tour the cavern to determine the location of each of the data pads before you attempt to trigger the data pads. All of the data pads do not have to be triggered between each cleansing. The most difficult data pad to access is the second one from the end that is surrounded by dead fish. If you get that one first then the others are reasonably easy to get within the 5 minute limit. <br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/The_Long_Way_Around' target='_blank'>Guild Wars 2 Wiki</a></i>"
          }
 
        ];
@@ -1213,33 +1213,18 @@ const resultContainer = (props) => {
   };
 
 locationList.map((location, index) => {
-    if(props.filter.Type === 'Fractal' && props.filter.Area === 'Fractals of the Mists'){
+    switch(props.filter.Type){
+      case "Fractal":
         return props.filter.FractalName === location.MapName ?
           filteredLocations.push(location)
-        : null
-    }
-
-    if(props.filter.Type === 'ALL' && props.filter.Area === 'ALL'){
-        return filteredLocations.push(location)
-    }
-
-    if((props.filter.Type === 'ALL' || props.filter.Type === 'NONE' ) && props.filter.Area !== 'ALL'){
-        return location.Area === props.filter.Area ?
-        filteredLocations.push(location)
         : null;
-    }
-    if(props.filter.Type !== 'ALL' && (props.filter.Area === 'ALL' || props.filter.Area === 'NONE' )){
-        return location.Type === props.filter.Type ?
-        filteredLocations.push(location)
-        : null;
-    }
-    if(props.filter.Type !== 'ALL' && props.filter.Area !== 'ALL'){
-        return location.Type === props.filter.Type && location.Area === props.filter.Area ?
-        filteredLocations.push(location)
-        : null;
-    }
 
-    return null;
+      case "Minidungeon":
+        return props.filter.Minidungeon === location.MapName ? filteredLocations.push(location) : null;
+
+      default:
+        return props.filter.Type === location.Type && props.filter.Area === location.Area ? filteredLocations.push(location) : null;
+    }
   });
 
   const resultItems =  filteredLocations.map((location, index) => {
