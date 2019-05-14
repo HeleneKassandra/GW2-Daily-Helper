@@ -5,21 +5,25 @@ const dailyItemContainer = (props) => {
   let dailyType = "";
   let dailyArea = "";
   let dailyFractal = "";
-  let dailyMinidungeon = "";
+  let specificLocationName = "";
   let lvl = null;
   const dailyPveArray = props.state.showToday ? props.state.dailyPve : props.state.TmrdailyPve;
   const dailyWvWArray = props.state.showToday ? props.state.dailyWvW : props.state.TmrdailyWvW;
   const dailyFractalArray = props.state.showToday ? props.state.dailyFractals : props.state.TmrdailyFractals;
 
   const findInOptionLists = (item) => {
-    dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name))
+    dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name));
     dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name)) ? props.state.areaOptionList.find(x => item.requirement.includes(x.name)) : props.state.areaOptionList.find(x => item.name.includes(x.name));
 
     if(!dailyArea){
-      dailyArea = props.state.minidungeonList.find(x => item.name.includes(x.name));
+      if(dailyType.name === "Minidungeon")
+          dailyArea = props.state.minidungeonList.find(x => item.name.includes(x.name));
+
+      if(dailyType.name === "Jumping Puzzle")
+          dailyArea = props.state.jumpingPuzzleList.find(x => item.name.includes(x.name));
     }
 
-    dailyMinidungeon = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
+    specificLocationName = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
 
 
     dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
@@ -28,7 +32,7 @@ const dailyItemContainer = (props) => {
     dailyType={dailyType}
     dailyArea={dailyArea}
     dailyFractalName={dailyFractal}
-    dailyMinidungeonName={dailyMinidungeon}
+    SpecificLocationName={specificLocationName}
     key={item.id}
     filteronDaily={props.filteronDaily}
     setActiveDaily={props.setActiveDaily}

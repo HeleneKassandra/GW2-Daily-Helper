@@ -13,7 +13,7 @@ class App extends Component {
       Type: '',
       Area: '',
       FractalName: '',
-      Minidungeon: ''
+      SpecificLocation: ''
     },
     selectedDaily: '',
     showToday: true,
@@ -35,7 +35,8 @@ class App extends Component {
       {name: "WvW Camp", value: "WvW Camp"},
       {name: "WvW Keep", value: "WvW Keep"},
       {name: "WvW Land Claimer", value: "WvW Land Claimer"},
-      {name: "WvW Tower", value: "WvW Tower"}
+      {name: "WvW Tower", value: "WvW Tower"},
+      {name: "Jumping Puzzle", value: "Jumping Puzzle"}
     ],
     areaOptionList: [
       {name: "Show all", value: "ALL" },
@@ -87,6 +88,10 @@ class App extends Component {
     { name: "Tears of Itlaocol", area: "Maguuma Jungle"},
     { name: "Rebel's Seclusion", area: "Ascalon"},
     { name: "The Long Way Around", area: "Orr"},
+    ],
+    jumpingPuzzleList: [
+      { name: "Chaos Crystal Cavern", area: "Ascalon"},
+      { name: "Branded Mine", area: "Ascalon"},
     ],
  };
 
@@ -191,14 +196,14 @@ isActiveDaily = (dailyname) => {
   return this.state.selectedDaily === dailyname;
 };
 
- filteronDaily = (type, area, fractal, minidungeon) => {
+ filteronDaily = (type, area, fractal, specificLocation) => {
    if(fractal){
      this.setState({
        filter: {
          Type: type,
          Area: area,
          FractalName: fractal,
-         Minidungeon: '',
+         SpecificLocation: '',
        }
      })
    }
@@ -208,7 +213,7 @@ isActiveDaily = (dailyname) => {
          Type: type,
          Area: area,
          FractalName: '',
-         Minidungeon: minidungeon,
+         SpecificLocation: specificLocation,
        }
      });
    }

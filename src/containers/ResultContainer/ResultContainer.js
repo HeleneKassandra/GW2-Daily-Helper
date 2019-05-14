@@ -851,6 +851,24 @@ const resultContainer = (props) => {
            GatheringItem: "Chest of the Explorer",
            ImageName: "Minidungeons/Long_Way_Around.jpg",
           Description: "<strong>Getting there:</strong><br>The cavern entrance is located east of Vesper Bell Waypoint, around the center of the triangle made up of three small islands in Terzetto Bay. The entrance can be seen by looking to the south-east at the bottom of the shallow bay.<br><br><strong>Walkthrough</strong><br>You will have 5 minutes to deactivate the six Asuran Data Pad (as the 1st pad will reset in 5 minutes), dispersed throughout the cavern, mostly around floor level, with the first two being high on the left wall of the entrance tunnel. Deactivating all six will open the gate and allow you to reach Scholar Fryxx and the Grand Chest next to him, earning the achievement. You will need to deactivate all of them while avoiding getting hit by the Risen Hands and dead fish.<br><br> If you are hit by a hand or fish, you will have the effect Covered in Corruption applied to you and you will not be able to activate any Data Pads, so you will need to go back to Explorer Camelia to have it removed. The cavern itself is roughly in the form of an L-shaped tunnel which turns left towards the Gate. The Risen Hands are located on the floors, walls and ceiling of the cavern; sometimes hidden behind columns, and both they and the fish are immune to damage and cannot be destroyed. <br><br>The greenish substance shot by the Risen Hands explodes into an AoE on contact and could end up contaminating you even while hiding behind columns, so it is best to keep moving to avoid the slow-moving shots, as the damage is negligible and the shots can be blocked, such as with aegis. However the contamination from fish cannot be blocked so give them as wide a berth as possible. Tour the cavern to determine the location of each of the data pads before you attempt to trigger the data pads. All of the data pads do not have to be triggered between each cleansing. The most difficult data pad to access is the second one from the end that is surrounded by dead fish. If you get that one first then the others are reasonably easy to get within the 5 minute limit. <br><br><i>Source: <a href='https://wiki.guildwars2.com/wiki/The_Long_Way_Around' target='_blank'>Guild Wars 2 Wiki</a></i>"
+        },
+         {
+           Area: "Ascalon",
+           MapName: "Chaos Crystal Cavern",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BOQBAAA=]",
+           WaypointName: "Old Piken Ruins Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "",
+         },
+         {
+           Area: "Ascalon",
+           MapName: "Branded Mine",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BNcAAAA=]",
+           WaypointName: "Tenaebron Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "",
          }
 
        ];
@@ -1220,7 +1238,10 @@ locationList.map((location, index) => {
         : null;
 
       case "Minidungeon":
-        return props.filter.Minidungeon === location.MapName ? filteredLocations.push(location) : null;
+        return props.filter.SpecificLocation === location.MapName ? filteredLocations.push(location) : null;
+
+      case "Jumping Puzzle":
+        return props.filter.SpecificLocation === location.MapName ? filteredLocations.push(location) : null;
 
       default:
         return props.filter.Type === location.Type && props.filter.Area === location.Area ? filteredLocations.push(location) : null;
