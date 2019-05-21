@@ -96,6 +96,18 @@ class App extends Component {
       { name: "Skipping Stones", area: "Kryta"},
       { name: "Shaman's Rookery", area: "Shiverpeaks"},
       { name: "Shattered Ice Ruins", area: "Shiverpeaks"},
+      { name: "Scavenger's Chasm", area: "Orr"},
+      { name: "Swashbuckler's Cove", area: "Kryta"},
+      { name: "Loreclaw Expanse", area: "Ascalon"},
+      { name: "Griffonrook Run", area: "Shiverpeaks"},
+      { name: "Coddler's Cove", area: "Shiverpeaks"},
+      { name: "Under New Management", area: "Kryta"},
+      { name: "Vizier's Tower", area: "Orr"},
+      { name: "Morgan's Leap", area: "Maguuma Jungle"},
+      { name: "Professor Portmatt's Lab", area: "Kryta"},
+      { name: "Spelunker's Delve", area: "Maguuma Jungle"},
+      { name: "Crimson Plateau", area: "Ascalon"},
+      { name: "Demongrub Pits", area: "Kryta"},
     ],
  };
 
