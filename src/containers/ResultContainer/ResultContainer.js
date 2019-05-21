@@ -869,7 +869,43 @@ const resultContainer = (props) => {
            WaypointName: "Tenaebron Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_Branded_mine.png",
-         }
+         },
+         {
+           Area: "Kryta",
+           MapName: "Collapsed Observatory",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BBIAAAA=]",
+           WaypointName: "Cereboth Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "Jumping_Puzzles/jp_collapsed_observatory.png",
+         },
+         {
+           Area: "Kryta",
+           MapName: "Skipping Stones",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BNAGAAA=]",
+           WaypointName: "Lion Point Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "Jumping_Puzzles/jp_skipping_stones.png",
+         },
+         {
+           Area: "Shiverpeaks",
+           MapName: "Shaman's Rookery",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BHcBAAA=]",
+           WaypointName: "Zelechor Hot Springs Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "Jumping_Puzzles/jp_shamans_rookery.png",
+         },
+         {
+           Area: "Shiverpeaks",
+           MapName: "Shattered Ice Ruins",
+           Type: "Jumping Puzzle",
+           WaypointCode: "[&BH4CAAA=]",
+           WaypointName: "Ice Floe Waypoint",
+           GatheringItem: "Chest of the Athlete",
+           ImageName: "Jumping_Puzzles/jp_shattered_ice_ruins.png",
+         },
 
        ];
     break;

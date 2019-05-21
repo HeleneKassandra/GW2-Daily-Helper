@@ -92,6 +92,10 @@ class App extends Component {
     jumpingPuzzleList: [
       { name: "Chaos Crystal Cavern", area: "Ascalon"},
       { name: "Branded Mine", area: "Ascalon"},
+      { name: "Collapsed Observatory", area: "Kryta"},
+      { name: "Skipping Stones", area: "Kryta"},
+      { name: "Shaman's Rookery", area: "Shiverpeaks"},
+      { name: "Shattered Ice Ruins", area: "Shiverpeaks"},
     ],
  };
 
@@ -136,7 +140,7 @@ class App extends Component {
             return fractalDaily.push(item);
            }
 
-           if(pveIds.includes(item.id) && item.name.includes("Minidungeon")){
+           if(pveIds.includes(item.id) && (item.name.includes("Minidungeon") || item.name.includes("Jumping Puzzle"))){
               pveDaily.push(item);
            }
 

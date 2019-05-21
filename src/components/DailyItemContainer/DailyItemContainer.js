@@ -10,7 +10,6 @@ const dailyItemContainer = (props) => {
   const dailyPveArray = props.state.showToday ? props.state.dailyPve : props.state.TmrdailyPve;
   const dailyWvWArray = props.state.showToday ? props.state.dailyWvW : props.state.TmrdailyWvW;
   const dailyFractalArray = props.state.showToday ? props.state.dailyFractals : props.state.TmrdailyFractals;
-
   const findInOptionLists = (item) => {
     dailyType = props.state.typeOptionsList.find(x => item.name.includes(x.name));
     dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name)) ? props.state.areaOptionList.find(x => item.requirement.includes(x.name)) : props.state.areaOptionList.find(x => item.name.includes(x.name));
@@ -18,15 +17,17 @@ const dailyItemContainer = (props) => {
     if(!dailyArea){
       if(dailyType.name === "Minidungeon")
           dailyArea = props.state.minidungeonList.find(x => item.name.includes(x.name));
+          specificLocationName = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
 
       if(dailyType.name === "Jumping Puzzle")
           dailyArea = props.state.jumpingPuzzleList.find(x => item.name.includes(x.name));
+          specificLocationName = props.state.jumpingPuzzleList.find(x => item.name.includes(x.name)) ? props.state.jumpingPuzzleList.find(x => item.name.includes(x.name)).name : '' ;
     }
 
-    specificLocationName = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
+    if(dailyType.name === "Fractal"){
+      dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
+    }
 
-
-    dailyFractal = props.state.fractalList.find(x => item.requirement.includes(x.name));
     return dailyType && dailyArea ?
     <DailyItem name={item.name}
     dailyType={dailyType}

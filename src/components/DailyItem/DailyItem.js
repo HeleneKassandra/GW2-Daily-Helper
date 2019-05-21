@@ -8,8 +8,8 @@ const dailyItem = (props) => {
   if(props.dailyType.name === "Minidungeon" || props.dailyType.name === "Jumping Puzzle" )
     dailyArea = props.dailyArea.area;
 
-  if(!props.dailyFractalName){
-     dailyFractal = null
+  if(!props.dailyFractalName ){
+     dailyFractal = null;
   }
   else{
     dailyFractal = props.dailyFractalName.name;
