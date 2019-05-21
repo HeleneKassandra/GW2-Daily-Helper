@@ -913,7 +913,7 @@ const resultContainer = (props) => {
            WaypointCode: "[&BKYCAAA=]",
            WaypointName: "Pagga's Waypoint",
            GatheringItem: "Chest of the Athlete",
-           ImageName: "",
+           ImageName: "Jumping_Puzzles/jp_scavengers_chasm.png",
          },
          {
            Area: "Kryta",
@@ -1102,7 +1102,7 @@ const resultContainer = (props) => {
            WaypointCode: "[&BD8FAAA=]",
            WaypointName: "Sorrow's Embrace Waypoint",
            GatheringItem: "Chest of the Athlete",
-           ImageName: "",
+           ImageName: "Jumping_Puzzles/jp_tribulation_caverns.png",
          },
          {
            Area: "Kryta",
