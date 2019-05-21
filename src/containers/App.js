@@ -13,7 +13,7 @@ class App extends Component {
       Type: '',
       Area: '',
       FractalName: '',
-      Minidungeon: ''
+      SpecificLocation: ''
     },
     selectedDaily: '',
     showToday: true,
@@ -35,7 +35,8 @@ class App extends Component {
       {name: "WvW Camp", value: "WvW Camp"},
       {name: "WvW Keep", value: "WvW Keep"},
       {name: "WvW Land Claimer", value: "WvW Land Claimer"},
-      {name: "WvW Tower", value: "WvW Tower"}
+      {name: "WvW Tower", value: "WvW Tower"},
+      {name: "Jumping Puzzle", value: "Jumping Puzzle"}
     ],
     areaOptionList: [
       {name: "Show all", value: "ALL" },
@@ -88,6 +89,46 @@ class App extends Component {
     { name: "Rebel's Seclusion", area: "Ascalon"},
     { name: "The Long Way Around", area: "Orr"},
     ],
+    jumpingPuzzleList: [
+      { name: "Chaos Crystal Cavern", area: "Ascalon"},
+      { name: "Branded Mine", area: "Ascalon"},
+      { name: "Collapsed Observatory", area: "Kryta"},
+      { name: "Skipping Stones", area: "Kryta"},
+      { name: "Shaman's Rookery", area: "Shiverpeaks"},
+      { name: "Shattered Ice Ruins", area: "Shiverpeaks"},
+      { name: "Scavenger's Chasm", area: "Orr"},
+      { name: "Swashbuckler's Cove", area: "Kryta"},
+      { name: "Loreclaw Expanse", area: "Ascalon"},
+      { name: "Griffonrook Run", area: "Shiverpeaks"},
+      { name: "Coddler's Cove", area: "Shiverpeaks"},
+      { name: "Under New Management", area: "Kryta"},
+      { name: "Vizier's Tower", area: "Orr"},
+      { name: "Morgan's Leap", area: "Maguuma Jungle"},
+      { name: "Professor Portmatt's Lab", area: "Kryta"},
+      { name: "Spelunker's Delve", area: "Maguuma Jungle"},
+      { name: "Crimson Plateau", area: "Ascalon"},
+      { name: "Demongrub Pits", area: "Kryta"},
+      { name: "Pig Iron Quarry", area: "Ascalon"},
+      { name: "Dark Reverie", area: "Maguuma Jungle"},
+      { name: "Spekks's Lab", area: "Maguuma Jungle"},
+      { name: "Antre of Adjournment", area: "Orr"},
+      { name: "Behem Gauntlet", area: "Ascalon"},
+      { name: "Craze's Folly", area: "Ascalon"},
+      { name: "Tribulation Rift Scaffolding", area: "Shiverpeaks"},
+      { name: "Conundrum Cubed", area: "Maguuma Jungle"},
+      { name: "Crash Site", area: "Maguuma Wastes"},
+      { name: "Tribulation Caverns", area: "Shiverpeaks"},
+      { name: "Urmaug's Secret", area: "Kryta"},
+      { name: "Buried Archives", area: "Orr"},
+      { name: "Hexfoundry Unhinged", area: "Maguuma Jungle"},
+      { name: "Goemm's Lab", area: "Maguuma Jungle"},
+      { name: "Wall Breach Blitz", area: "Ascalon"},
+      { name: "King Jalis's Refuge", area: "Shiverpeaks"},
+      { name: "Fawcett's Bounty", area: "Kryta"},
+      { name: "Weyandt's Revenge", area: "Kryta"},
+      { name: "Grendich Gamble", area: "Ascalon"},
+      { name: "Only Zuhl", area: "Shiverpeaks"},
+    ],
  };
 
   initializeReactGA = () => {
@@ -131,7 +172,7 @@ class App extends Component {
             return fractalDaily.push(item);
            }
 
-           if(pveIds.includes(item.id) && item.name.includes("Minidungeon")){
+           if(pveIds.includes(item.id) && (item.name.includes("Minidungeon") || item.name.includes("Jumping Puzzle"))){
               pveDaily.push(item);
            }
 
@@ -191,14 +232,14 @@ isActiveDaily = (dailyname) => {
   return this.state.selectedDaily === dailyname;
 };
 
- filteronDaily = (type, area, fractal, minidungeon) => {
+ filteronDaily = (type, area, fractal, specificLocation) => {
    if(fractal){
      this.setState({
        filter: {
          Type: type,
          Area: area,
          FractalName: fractal,
-         Minidungeon: '',
+         SpecificLocation: '',
        }
      })
    }
@@ -208,7 +249,7 @@ isActiveDaily = (dailyname) => {
          Type: type,
          Area: area,
          FractalName: '',
-         Minidungeon: minidungeon,
+         SpecificLocation: specificLocation,
        }
      });
    }

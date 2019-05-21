@@ -68,6 +68,9 @@ switch(props.iconfor){
   case "WvW Camp":
     image =  <img src={images['Event_Camp.png']} alt="WvW Camp icon" style={style}/>;
   break;
+  case "Jumping Puzzle":
+   image =  <img src={images['achievement_chest.png']} alt="Achievement chest icon" style={style}/>
+  break;
 
   default:
     image = <img src={images['World_Completion.png']} alt="world icon" style={style}/>;
