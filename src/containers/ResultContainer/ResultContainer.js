@@ -859,7 +859,7 @@ const resultContainer = (props) => {
            WaypointCode: "[&BOQBAAA=]",
            WaypointName: "Old Piken Ruins Waypoint",
            GatheringItem: "Chest of the Athlete",
-           ImageName: "",
+           ImageName: "Jumping_Puzzles/jp_chaos_crystal_cavern.png",
          },
          {
            Area: "Ascalon",
@@ -868,7 +868,7 @@ const resultContainer = (props) => {
            WaypointCode: "[&BNcAAAA=]",
            WaypointName: "Tenaebron Waypoint",
            GatheringItem: "Chest of the Athlete",
-           ImageName: "",
+           ImageName: "Jumping_Puzzles/jp_Branded_mine.png",
          }
 
        ];
