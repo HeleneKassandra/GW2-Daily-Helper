@@ -15,13 +15,14 @@ const dailyItemContainer = (props) => {
     dailyArea = props.state.areaOptionList.find(x => item.requirement.includes(x.name)) ? props.state.areaOptionList.find(x => item.requirement.includes(x.name)) : props.state.areaOptionList.find(x => item.name.includes(x.name));
 
     if(!dailyArea){
-      if(dailyType.name === "Minidungeon")
+      if(dailyType.name === "Minidungeon"){
           dailyArea = props.state.minidungeonList.find(x => item.name.includes(x.name));
           specificLocationName = props.state.minidungeonList.find(x => item.name.includes(x.name)) ? props.state.minidungeonList.find(x => item.name.includes(x.name)).name : '' ;
-
-      if(dailyType.name === "Jumping Puzzle")
+        }
+      if(dailyType.name === "Jumping Puzzle"){
           dailyArea = props.state.jumpingPuzzleList.find(x => item.name.includes(x.name));
           specificLocationName = props.state.jumpingPuzzleList.find(x => item.name.includes(x.name)) ? props.state.jumpingPuzzleList.find(x => item.name.includes(x.name)).name : '' ;
+        }
     }
 
     if(dailyType.name === "Fractal"){
