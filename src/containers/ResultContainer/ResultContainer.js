@@ -1,6 +1,6 @@
 import React from 'react';
 import './ResultContainer.css';
-import ResultItem from '../../components/ResultItem/ResultItem.js';
+import ResultItemContainer from '../ResultItemContainer/ResultItemContainer.js';
 
 
 const resultContainer = (props) => {
@@ -1572,7 +1572,7 @@ locationList.map((location, index) => {
   });
 
   const resultItems =  filteredLocations.map((location, index) => {
-      return <ResultItem key={index} location={location}/>
+      return <ResultItemContainer key={index} location={location}/>
   });
   const noResultsText = filteredLocations.length <= 0 ? <h2 className="clickOnDailyMsg">Click on a daily <i className="fas fa-level-up-alt"></i></h2> : null;
   return(

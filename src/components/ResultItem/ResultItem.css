@@ -6,14 +6,6 @@
   width: 100%;
 }
 
-.resultItem--content{
-  align-items: center;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 30px auto;
-  grid-template-rows: auto fit-content(30%);
-  padding:1rem;
-}
 
 .resultItem--content-gatheringItemContainer{
   align-items: center;

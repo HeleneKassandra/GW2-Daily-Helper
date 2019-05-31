@@ -27,7 +27,7 @@ const resultItem = (props) => {
   const showClickToCopy = props.location.Type.includes("WvW") ? null : <span className="resultItem--content--WaypointCopyInfo"> - Click to copy</span>;
   const waypointIconOrWvWIcon = props.location.Type.includes("WvW") ?  <IconSelecter iconfor="WvW" /> : <IconSelecter iconfor="Waypoint" />;
   return (
-    <div className="resultItem--container">
+    <>
       <div className="resultItem-image--Container">
       <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName} className="locationimage"/>
       <h3 className="resultItem-mapname">{props.location.MapName}</h3>
@@ -44,7 +44,7 @@ const resultItem = (props) => {
 
         {showGatheringItem}
       </div>
-    </div>
+    </>
 
   );
 }
