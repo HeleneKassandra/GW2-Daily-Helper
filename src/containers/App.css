@@ -30,13 +30,12 @@
   text-align: center;
 }
 
-.resultItem--content{
-  align-items: center;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 30px auto;
-  grid-template-rows: auto fit-content(30%);
-  padding:1rem;
+.resultItem--container{
+  background: #FFF;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display:grid;
+  grid-template-rows: auto fit-content(40%);
+  width: 100%;
 }
 
 /* DESKTOP */

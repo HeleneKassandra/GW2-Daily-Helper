@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const resultItem = (props) => {
 
+
   const onSuccess = () => {
     return toast.info("Waypoint copied!", { autoClose: 1500});
 
@@ -41,7 +42,7 @@ const resultItem = (props) => {
             {showClickToCopy}
           </div>
         </div>
-
+        {(props.location.Type === "Minidungeon"  || props.location.Type === "Jumping Puzzle") && <a onClick={ props.toggle }><i className="fas fa-angle-up fa-2x"></i></a>  }
         {showGatheringItem}
       </div>
     </>

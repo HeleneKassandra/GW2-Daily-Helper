@@ -69,7 +69,7 @@ switch(props.iconfor){
     image =  <img src={images['Event_Camp.png']} alt="WvW Camp icon" style={style}/>;
   break;
   case "Jumping Puzzle":
-   image =  <img src={images['achievement_chest.png']} alt="Achievement chest icon" style={style}/>
+   image =  <img src={images['achievement_chest.png']} alt="Achievement chest icon" style={style}/>;
   break;
 
   default:
