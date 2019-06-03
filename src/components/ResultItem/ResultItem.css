@@ -12,7 +12,7 @@
   border-top: 1px solid #cacaca;
   color: #666;
   display:grid;
-  grid-column: 1 / span 2;
+  grid-column: 1 / span 3;
   grid-gap: 1rem;
   grid-template-columns: 30px auto;
   padding: 0.5rem 0;
