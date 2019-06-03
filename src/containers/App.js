@@ -254,7 +254,8 @@ setexpandDescriptionOfIndex = (index) => {
          Area: area,
          FractalName: fractal,
          SpecificLocation: '',
-       }
+       },
+       expandDescriptionOfIndex: null
      })
    }
    else {
@@ -264,7 +265,8 @@ setexpandDescriptionOfIndex = (index) => {
          Area: area,
          FractalName: '',
          SpecificLocation: specificLocation,
-       }
+       },
+       expandDescriptionOfIndex: null
      });
    }
    // Timeout is there to trigger scrolling after result has loaded
