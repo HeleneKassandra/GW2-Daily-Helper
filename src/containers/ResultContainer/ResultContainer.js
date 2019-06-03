@@ -860,6 +860,7 @@ const resultContainer = (props) => {
            WaypointName: "Old Piken Ruins Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_chaos_crystal_cavern.png",
+           Description: "BXztqUzly8Y"
          },
          {
            Area: "Ascalon",
@@ -869,6 +870,7 @@ const resultContainer = (props) => {
            WaypointName: "Tenaebron Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_Branded_mine.png",
+           Description: "gzWWrg9T4FI"
          },
          {
            Area: "Kryta",
@@ -878,6 +880,7 @@ const resultContainer = (props) => {
            WaypointName: "Cereboth Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_collapsed_observatory.png",
+           Description: "O-2eJOrb5eQ"
          },
          {
            Area: "Kryta",
@@ -887,6 +890,7 @@ const resultContainer = (props) => {
            WaypointName: "Lion Point Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_skipping_stones.png",
+           Description: "hG-jAW-0ECM"
          },
          {
            Area: "Shiverpeaks",
@@ -896,6 +900,7 @@ const resultContainer = (props) => {
            WaypointName: "Zelechor Hot Springs Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_shamans_rookery.png",
+           Description: "xClNpRZna5w"
          },
          {
            Area: "Shiverpeaks",
@@ -905,6 +910,7 @@ const resultContainer = (props) => {
            WaypointName: "Ice Floe Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_shattered_ice_ruins.png",
+           Description: "QomMi8FEdys"
          },
          {
            Area: "Orr",
