@@ -42,7 +42,7 @@ const resultItem = (props) => {
             {showClickToCopy}
           </div>
         </div>
-        {(props.location.Type === "Minidungeon"  || props.location.Type === "Jumping Puzzle") && <button className="resultItem-Btn--Toggle" onClick={ () =>  props.toggle(props.index) }><i className="fas fa-angle-up fa-2x"></i></button>  }
+        {(props.location.Type === "Minidungeon"  || props.location.Type === "Jumping Puzzle") && <button className="resultItem-Btn--Toggle" onClick={ () =>  props.toggle(props.index) }><i className="fas fa-angle-up fa-3x"></i></button>  }
         {showGatheringItem}
       </div>
     </>
