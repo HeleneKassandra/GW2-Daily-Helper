@@ -234,9 +234,16 @@ isActiveDaily = (dailyname) => {
 };
 
 setexpandDescriptionOfIndex = (index) => {
-  this.setState({
-    expandDescriptionOfIndex: index
-  });
+  if(this.state.expandDescriptionOfIndex === index){
+    this.setState({
+      expandDescriptionOfIndex: null
+    });
+  }
+  else {
+    this.setState({
+      expandDescriptionOfIndex: index
+    });
+  }
 };
 
  filteronDaily = (type, area, fractal, specificLocation) => {

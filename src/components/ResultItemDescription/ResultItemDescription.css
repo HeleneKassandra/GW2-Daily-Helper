@@ -1,0 +1,9 @@
+.resultItemDesc--container{
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: fit-content(30%) auto;
+}
+
+.resultItemDesc--close-icon{
+  justify-self: end;
+}

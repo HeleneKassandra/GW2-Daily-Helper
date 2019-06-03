@@ -37,6 +37,9 @@
   grid-template-rows: auto fit-content(40%);
   width: 100%;
 }
+.resultItem-Btn--Toggle{
+  border: none;
+}
 
 /* DESKTOP */
 @media (min-width: 1000px){

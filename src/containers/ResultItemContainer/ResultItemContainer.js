@@ -6,7 +6,7 @@ const resultItemContainer =  props => {
 
   return (
       <div className="resultItem--container">
-      {props.expandDescriptionOfIndex === props.index ? <ResultItemDescription  location={props.location}/>  :
+      {props.expandDescriptionOfIndex === props.index ? <ResultItemDescription  toggle={props.setexpandDescriptionOfIndex} location={props.location}/>  :
         <ResultItem location={props.location} toggle={props.setexpandDescriptionOfIndex} index={props.index}/> }
       </div>
   );
