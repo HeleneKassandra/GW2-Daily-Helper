@@ -1572,7 +1572,7 @@ locationList.map((location, index) => {
   });
 
   const resultItems =  filteredLocations.map((location, index) => {
-      return <ResultItemContainer key={index} location={location}/>
+      return <ResultItemContainer key={index} location={location} index={index} expandDescriptionOfIndex={props.expandDescriptionOfIndex} setexpandDescriptionOfIndex={props.setexpandDescriptionOfIndex}/>
   });
   const noResultsText = filteredLocations.length <= 0 ? <h2 className="clickOnDailyMsg">Click on a daily <i className="fas fa-level-up-alt"></i></h2> : null;
   return(

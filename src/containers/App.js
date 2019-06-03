@@ -17,6 +17,7 @@ class App extends Component {
     },
     selectedDaily: '',
     showToday: true,
+    expandDescriptionOfIndex: null,
     dailyPve: [],
     dailyWvW: [],
     dailyFractals: [],
@@ -232,6 +233,12 @@ isActiveDaily = (dailyname) => {
   return this.state.selectedDaily === dailyname;
 };
 
+setexpandDescriptionOfIndex = (index) => {
+  this.setState({
+    expandDescriptionOfIndex: index
+  });
+};
+
  filteronDaily = (type, area, fractal, specificLocation) => {
    if(fractal){
      this.setState({
@@ -293,7 +300,7 @@ isActiveDaily = (dailyname) => {
             setActiveDaily={this.setActiveDaily}
             isActiveDaily={this.isActiveDaily}/>
           <div className="Allresults" ref={this.resultRef}>
-            <ResultContainer filter={this.state.filter} menuOption={this.state.menuOptionChosen}/>
+            <ResultContainer filter={this.state.filter} expandDescriptionOfIndex={this.state.expandDescriptionOfIndex} setexpandDescriptionOfIndex={this.setexpandDescriptionOfIndex} menuOption={this.state.menuOptionChosen}/>
           </div>
         </div>
       </div>

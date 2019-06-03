@@ -4,14 +4,10 @@ import ResultItemDescription from '../../components/ResultItemDescription/Result
 
 const resultItemContainer =  props => {
 
-  let isDescriptionToggled = false;
-
- const  toggleExpandDescView = () => isDescriptionToggled = !isDescriptionToggled;
-
   return (
       <div className="resultItem--container">
-      {isDescriptionToggled ? <ResultItemDescription  location={props.location}/>  :
-        <ResultItem location={props.location} toggle={toggleExpandDescView}/> }
+      {props.expandDescriptionOfIndex === props.index ? <ResultItemDescription  location={props.location}/>  :
+        <ResultItem location={props.location} toggle={props.setexpandDescriptionOfIndex} index={props.index}/> }
       </div>
   );
 
