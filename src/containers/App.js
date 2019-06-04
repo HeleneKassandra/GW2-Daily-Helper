@@ -178,6 +178,10 @@ class App extends Component {
            }
 
          if(this.state.typeOptionsList.find(x => item.name.includes(x.value)) && (this.state.areaOptionList.find(x => item.requirement.includes(x.name)) || this.state.areaOptionList.find(x => item.name.includes(x.name)))){
+           // Removes  the general daily fractal daily achievement as it currently dont link to anything
+           if(item.name === "Daily Fractal")
+            return null;
+
            if(pveIds.includes(item.id)){
               return pveDaily.push(item);
            }
