@@ -11,7 +11,8 @@
     "react-ga": "^2.5.7",
     "react-medium-image-zoom": "^3.0.15",
     "react-scripts": "2.1.8",
-    "react-toastify": "^5.0.0-rc.3"
+    "react-toastify": "^5.0.0-rc.3",
+    "react-youtube": "^7.9.0"
   },
   "scripts": {
     "start": "react-scripts start",

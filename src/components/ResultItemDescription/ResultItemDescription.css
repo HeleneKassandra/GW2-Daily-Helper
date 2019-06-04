@@ -1,0 +1,24 @@
+.resultItemDesc--container{
+  display: grid;
+  grid-template-rows: fit-content(30%) auto;
+  grid-template-columns: auto fit-content(30%);
+}
+
+.resultItemDesc--close-icon{
+  justify-self: end;
+  padding:0.3rem 0.5rem;
+}
+
+.resultItemDesc--container > p{
+  grid-column: 1 / span 2;
+  padding: 0rem 1rem;
+}
+.resultItemDesc--container > h3{
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.resultItem-desc--video{
+  display:grid;
+  grid-column: 1 / span 2;
+}

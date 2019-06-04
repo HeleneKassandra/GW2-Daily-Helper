@@ -17,6 +17,7 @@ class App extends Component {
     },
     selectedDaily: '',
     showToday: true,
+    expandDescriptionOfIndex: null,
     dailyPve: [],
     dailyWvW: [],
     dailyFractals: [],
@@ -177,6 +178,10 @@ class App extends Component {
            }
 
          if(this.state.typeOptionsList.find(x => item.name.includes(x.value)) && (this.state.areaOptionList.find(x => item.requirement.includes(x.name)) || this.state.areaOptionList.find(x => item.name.includes(x.name)))){
+           // Removes  the general daily fractal daily achievement as it currently dont link to anything
+           if(item.name === "Daily Fractal")
+            return null;
+
            if(pveIds.includes(item.id)){
               return pveDaily.push(item);
            }
@@ -232,6 +237,19 @@ isActiveDaily = (dailyname) => {
   return this.state.selectedDaily === dailyname;
 };
 
+setexpandDescriptionOfIndex = (index) => {
+  if(this.state.expandDescriptionOfIndex === index){
+    this.setState({
+      expandDescriptionOfIndex: null
+    });
+  }
+  else {
+    this.setState({
+      expandDescriptionOfIndex: index
+    });
+  }
+};
+
  filteronDaily = (type, area, fractal, specificLocation) => {
    if(fractal){
      this.setState({
@@ -240,7 +258,8 @@ isActiveDaily = (dailyname) => {
          Area: area,
          FractalName: fractal,
          SpecificLocation: '',
-       }
+       },
+       expandDescriptionOfIndex: null
      })
    }
    else {
@@ -250,7 +269,8 @@ isActiveDaily = (dailyname) => {
          Area: area,
          FractalName: '',
          SpecificLocation: specificLocation,
-       }
+       },
+       expandDescriptionOfIndex: null
      });
    }
    // Timeout is there to trigger scrolling after result has loaded
@@ -293,7 +313,7 @@ isActiveDaily = (dailyname) => {
             setActiveDaily={this.setActiveDaily}
             isActiveDaily={this.isActiveDaily}/>
           <div className="Allresults" ref={this.resultRef}>
-            <ResultContainer filter={this.state.filter} menuOption={this.state.menuOptionChosen}/>
+            <ResultContainer filter={this.state.filter} expandDescriptionOfIndex={this.state.expandDescriptionOfIndex} setexpandDescriptionOfIndex={this.setexpandDescriptionOfIndex} menuOption={this.state.menuOptionChosen}/>
           </div>
         </div>
       </div>

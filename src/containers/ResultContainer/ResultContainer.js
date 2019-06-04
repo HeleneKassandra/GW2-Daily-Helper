@@ -860,6 +860,7 @@ const resultContainer = (props) => {
            WaypointName: "Old Piken Ruins Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_chaos_crystal_cavern.png",
+           Description: "BXztqUzly8Y"
          },
          {
            Area: "Ascalon",
@@ -869,6 +870,7 @@ const resultContainer = (props) => {
            WaypointName: "Tenaebron Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_Branded_mine.png",
+           Description: "gzWWrg9T4FI"
          },
          {
            Area: "Kryta",
@@ -878,6 +880,7 @@ const resultContainer = (props) => {
            WaypointName: "Cereboth Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_collapsed_observatory.png",
+           Description: "O-2eJOrb5eQ"
          },
          {
            Area: "Kryta",
@@ -887,6 +890,7 @@ const resultContainer = (props) => {
            WaypointName: "Lion Point Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_skipping_stones.png",
+           Description: "hG-jAW-0ECM"
          },
          {
            Area: "Shiverpeaks",
@@ -896,6 +900,7 @@ const resultContainer = (props) => {
            WaypointName: "Zelechor Hot Springs Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_shamans_rookery.png",
+           Description: "xClNpRZna5w"
          },
          {
            Area: "Shiverpeaks",
@@ -905,6 +910,7 @@ const resultContainer = (props) => {
            WaypointName: "Ice Floe Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_shattered_ice_ruins.png",
+           Description: "QomMi8FEdys"
          },
          {
            Area: "Orr",
@@ -914,6 +920,7 @@ const resultContainer = (props) => {
            WaypointName: "Pagga's Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_scavengers_chasm.png",
+           Description: "5DYmfiRQJQY"
          },
          {
            Area: "Kryta",
@@ -923,6 +930,7 @@ const resultContainer = (props) => {
            WaypointName: "Cornucopian Fields Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_swashbucklers_cove.png",
+           Description: "EYrXhwJGTFo"
          },
          {
            Area: "Ascalon",
@@ -932,6 +940,7 @@ const resultContainer = (props) => {
            WaypointName: "Loreclaw Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_loreclaw_expanse.png",
+           Description: "W8n08qlfXnQ"
          },
          {
            Area: "Shiverpeaks",
@@ -941,6 +950,7 @@ const resultContainer = (props) => {
            WaypointName: "False Lake Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_griffonrook_run.png",
+           Description: "o5wEHgm3Aco"
          },
          {
            Area: "Shiverpeaks",
@@ -950,6 +960,7 @@ const resultContainer = (props) => {
            WaypointName: "Okarinoo Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_coddlers_cove.png",
+           Description: "l1SwH3Y5guE"
          },
          {
            Area: "Kryta",
@@ -959,6 +970,7 @@ const resultContainer = (props) => {
            WaypointName: "Pearl Islet Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_under_new_management.png",
+           Description: "1v5GZ4ClHvA"
          },
          {
            Area: "Orr",
@@ -968,6 +980,7 @@ const resultContainer = (props) => {
            WaypointName: "Lone Post Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_viziers_tower.png",
+           Description: "M-w59O9y8ss"
          },
          {
            Area: "Maguuma Jungle",
@@ -977,6 +990,7 @@ const resultContainer = (props) => {
            WaypointName: "Spiral Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_morgans_spiral.png",
+           Description: "BmDmi3z6ZaA"
          },
          {
            Area: "Kryta",
@@ -986,6 +1000,7 @@ const resultContainer = (props) => {
            WaypointName: "Sorrowful Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_portmatts_lab.png",
+           Description: "ItM2BBjYzoQ"
          },
          {
            Area: "Maguuma Jungle",
@@ -995,6 +1010,7 @@ const resultContainer = (props) => {
            WaypointName: "Sleive's Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_spelunkers_delve.png",
+           Description: "HbGUNFFmlTw"
          },
          {
            Area: "Ascalon",
@@ -1004,6 +1020,7 @@ const resultContainer = (props) => {
            WaypointName: "Redreave Mill Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_crimson_plateau.png",
+           Description: "NnAetuLkPZg"
          },
          {
            Area: "Kryta",
@@ -1013,6 +1030,7 @@ const resultContainer = (props) => {
            WaypointName: "Godslost Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_demongrub_pits.png",
+           Description: "jVSDyyGe8mo"
          },
          {
            Area: "Ascalon",
@@ -1022,6 +1040,7 @@ const resultContainer = (props) => {
            WaypointName: "Severed Breach Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_pig_iron_quarry.png",
+           Description: "jFn2uw8VTkw"
          },
          {
            Area: "Maguuma Jungle",
@@ -1031,6 +1050,7 @@ const resultContainer = (props) => {
            WaypointName: "Spiral Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_dark_reviere.png",
+           Description: "wtU3_DZfK5w"
          },
          {
            Area: "Maguuma Jungle",
@@ -1040,6 +1060,7 @@ const resultContainer = (props) => {
            WaypointName: "Gleaner's Cove Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_spekks_lab.png",
+           Description: "_bHmav-lZEo"
          },
          {
            Area: "Orr",
@@ -1049,6 +1070,7 @@ const resultContainer = (props) => {
            WaypointName: "Valley of Lyss Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_antre_of_adjournment.png",
+           Description: "b39AbPKMgxc"
          },
          {
            Area: "Ascalon",
@@ -1058,6 +1080,7 @@ const resultContainer = (props) => {
            WaypointName: "Behem Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_behem_gauntlet.png",
+           Description: "hCShpaE5Nh8"
          },
          {
            Area: "Ascalon",
@@ -1067,6 +1090,7 @@ const resultContainer = (props) => {
            WaypointName: "Terra Carorunda Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_crazes_folly.png",
+           Description: "ABBAsq45N_c"
          },
          {
            Area: "Shiverpeaks",
@@ -1076,6 +1100,7 @@ const resultContainer = (props) => {
            WaypointName: "Sorrow's Embrace Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_tribulation_rift.png",
+           Description: "hhu9H_eihGY"
          },
          {
            Area: "Maguuma Jungle",
@@ -1085,6 +1110,7 @@ const resultContainer = (props) => {
            WaypointName: "Govoran Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_conundrum_cubed.png",
+           Description: "CyO6W7z4vt4"
          },
          {
            Area: "Maguuma Wastes",
@@ -1094,6 +1120,7 @@ const resultContainer = (props) => {
            WaypointName: "Dry Top Entry Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "",
+           Description: "CyBI5EpUPcY"
          },
          {
            Area: "Shiverpeaks",
@@ -1103,6 +1130,7 @@ const resultContainer = (props) => {
            WaypointName: "Sorrow's Embrace Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_tribulation_caverns.png",
+           Description: "avy0Osc6ezU"
          },
          {
            Area: "Kryta",
@@ -1112,6 +1140,7 @@ const resultContainer = (props) => {
            WaypointName: "Guild Bluff Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_urmaugs_secret.png",
+           Description: "EVclFebZuB8"
          },
          {
            Area: "Orr",
@@ -1121,6 +1150,7 @@ const resultContainer = (props) => {
            WaypointName: "Shipwreck Rock Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_buried_archives.png",
+           Description: "FttFujmyJJA"
          },
          {
            Area: "Maguuma Jungle",
@@ -1130,6 +1160,7 @@ const resultContainer = (props) => {
            WaypointName: "Darkweather Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_hexfoundry_unhinged.png",
+           Description: "m6x8CnA3yJ8"
          },
          {
            Area: "Maguuma Jungle",
@@ -1139,6 +1170,7 @@ const resultContainer = (props) => {
            WaypointName: "Cuatl Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_goemms_lab.png",
+           Description: "aAPrH56ecNs"
          },
          {
            Area: "Ascalon",
@@ -1148,6 +1180,7 @@ const resultContainer = (props) => {
            WaypointName: "Breached Wall Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_wall_breach_blitz.png",
+           Description: "FejoFvXRn8c"
          },
          {
            Area: "Shiverpeaks",
@@ -1157,6 +1190,7 @@ const resultContainer = (props) => {
            WaypointName: "Snowhawk Landing Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_king_jalis_refuge.png",
+           Description: "8wI6njM5XkI"
          },
          {
            Area: "Kryta",
@@ -1166,6 +1200,7 @@ const resultContainer = (props) => {
            WaypointName: "Arca Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_fawcetts_bounty.png",
+           Description: "jg_DPNw-0DY"
          },
          {
            Area: "Kryta",
@@ -1175,6 +1210,7 @@ const resultContainer = (props) => {
            WaypointName: "Farshore Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_weyandts_revenge.png",
+           Description: "GdgKi47JsGA"
          },
          {
            Area: "Ascalon",
@@ -1184,6 +1220,7 @@ const resultContainer = (props) => {
            WaypointName: "Blasted Moors Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_grendich_gamble.png",
+           Description: "VX-pLqekaZw"
          },
          {
            Area: "Shiverpeaks",
@@ -1193,6 +1230,7 @@ const resultContainer = (props) => {
            WaypointName: "Foundation 86 Waypoint",
            GatheringItem: "Chest of the Athlete",
            ImageName: "Jumping_Puzzles/jp_only_zuhl.png",
+           Description: "_JXM8oZt-vg"
          },
        ];
     break;
@@ -1572,7 +1610,7 @@ locationList.map((location, index) => {
   });
 
   const resultItems =  filteredLocations.map((location, index) => {
-      return <ResultItemContainer key={index} location={location}/>
+      return <ResultItemContainer key={index} location={location} index={index} expandDescriptionOfIndex={props.expandDescriptionOfIndex} setexpandDescriptionOfIndex={props.setexpandDescriptionOfIndex}/>
   });
   const noResultsText = filteredLocations.length <= 0 ? <h2 className="clickOnDailyMsg">Click on a daily <i className="fas fa-level-up-alt"></i></h2> : null;
   return(
