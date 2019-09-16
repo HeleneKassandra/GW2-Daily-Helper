@@ -9,10 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const resultItem = (props) => {
 
-
   const onSuccess = () => {
     return toast.info("Waypoint copied!", { autoClose: 1500});
-
   }
 
   const iconfor = props.location.Type === "Minidungeon" ? "Reward" : props.location.Type;
@@ -30,7 +28,7 @@ const resultItem = (props) => {
   return (
     <>
       <div className="resultItem-image--Container">
-      <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName} className="locationimage"/>
+      <LocationImgFinder path={props.location.ImageName} waypoint={props.location.WaypointName}/>
       <h3 className="resultItem-mapname">{props.location.MapName}</h3>
       </div>
       <div className="resultItem--content">

@@ -301,7 +301,7 @@ setexpandDescriptionOfIndex = (index) => {
     return (
       <div className="App">
         <div className="navbar--container">
-          <Navbar optionChosen={this.state.menuOptionChosen} clicked={this.changeMenuOptionChoosenHandler}/>
+          <Navbar optionChosen={this.state.menuOptionChosen} changeMenuOption={this.changeMenuOptionChoosenHandler}/>
         </div>
         <div className="main-content">
           <TopSectionContainer
