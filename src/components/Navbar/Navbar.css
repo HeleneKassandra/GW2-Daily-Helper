@@ -6,7 +6,7 @@
   grid-column-gap: 0.5rem;
   grid-template-columns: repeat(3, auto);
   justify-items: center;
-  padding:1rem;
+  padding:.5rem;
   user-select: none;
 }
 
