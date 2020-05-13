@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './containers/App';
 import * as serviceWorker from './serviceWorker';
-import '../node_modules/@fortawesome/fontawesome-pro/js/all';
-import '../node_modules/@fortawesome/fontawesome-pro/css/all.css';
 
 
 ReactDOM.render(<App />, document.getElementById('root'));
