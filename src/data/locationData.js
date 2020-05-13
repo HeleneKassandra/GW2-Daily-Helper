@@ -497,6 +497,15 @@ const locationList = () => {
       {
         Area: "Shiverpeaks",
         MapName: "Dredgehaunt Cliffs",
+        Type: "Forager",
+        WaypointCode: "[&BF8CAAA=]",
+        WaypointName: "Wide Expanse Waypoint",
+        GatheringItem: "Cabbage",
+        ImageName: "Shiverpeaks/Shiverpeaks_Forager_Wide-Expanse.jpg"
+      },
+      {
+        Area: "Shiverpeaks",
+        MapName: "Dredgehaunt Cliffs",
         Type: "Lumberer",
         WaypointCode: "[&BFsCAAA=]",
         WaypointName: " Steelbrachen Waypoint",
