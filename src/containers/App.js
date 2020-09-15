@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar/Navbar.js';
 import TopSectionContainer from './TopSectionContainer/TopSectionContainer.js';
 import ResultContainer from './ResultContainer/ResultContainer';
 import ReactGA from 'react-ga';
+import "../assets/fontawesome/css/all.min.css";
 
 
 class App extends Component {
