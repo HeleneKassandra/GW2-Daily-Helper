@@ -4,7 +4,7 @@
   color: #FFF;
   display: grid;
   grid-column-gap: 0.5rem;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-items: center;
   padding:.5rem;
   user-select: none;
@@ -16,6 +16,8 @@
   grid-row-gap: 0.5rem;
   justify-items: center;
   cursor: pointer;
+  color: #FFF;
+  text-decoration: none;
 }
 
 .navbar--item:hover{
@@ -30,7 +32,7 @@
   .navbar--content{
     grid-row-gap: 1rem;
     grid-template-columns: auto;
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
   }
 
 

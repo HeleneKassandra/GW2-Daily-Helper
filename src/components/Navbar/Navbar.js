@@ -4,6 +4,9 @@ import './Navbar.css';
 const navbar = ({optionChosen, changeMenuOption}) =>{
   return(
       <nav className="navbar--content">
+      <a href="https://www.thedaemonarmy.com" className="navbar--item">
+        <i className="fas fa-house"></i>Home
+        </a>
         <div className={optionChosen === 'PVE' ? 'navbar--item navbar--item-active' : 'navbar--item' } onClick={() => changeMenuOption('PVE')}>
           <i className="fas fa-globe-europe"></i>PvE
         </div>

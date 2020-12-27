@@ -135,7 +135,7 @@ class App extends Component {
 
   initializeReactGA = () => {
    ReactGA.initialize('UA-113563405-1');
-   ReactGA.pageview('/homepage');
+   ReactGA.pageview('/gw2-daily-helper');
 }
 
  resultRef = React.createRef();
