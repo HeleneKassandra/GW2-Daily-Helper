@@ -1584,6 +1584,15 @@ const resultContainer = (props) => {
           GatheringItem: "",
           ImageName: "Fractal/Fractal_Shattered_Observatory.jpg"
         },
+        {
+          Area: "Fractals of the Mists",
+          MapName: "Sunqua Peak",
+          Type: "Fractal",
+          WaypointCode: "[&BDAEAAA=]",
+          WaypointName: "Fort Marriner Waypoint",
+          GatheringItem: "",
+          ImageName: "Fractal/Fractal_Sunqua_Peak.jpg"
+        },
       ];
     break;
 

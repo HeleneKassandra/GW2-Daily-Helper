@@ -75,6 +75,7 @@ class App extends Component {
       {name: "Solid Ocean", value: "Solid Ocean", reclvl: [60, 35] },
       {name: "Nightmare", value: "Nightmare", reclvl: [24] },
       {name: "Shattered Observatory", value: "Shattered Observatory", reclvl: [25,75]},
+      {name: "Sunqua Peak", value: "Sunqua Peak", reclvl: [25, 50, 75, 100]},
     ],
     minidungeonList: [
     { name: "Bad Neighborhood", area: "Kryta"},
