@@ -5,14 +5,14 @@
   "homepage": "https://www.helenekassandra.com/gw2-daily-helper/",
   "dependencies": {
     "@material-ui/core": "^3.9.4",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-clipboard.js": "^2.0.16",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-ga": "^2.7.0",
-    "react-medium-image-zoom": "^3.1.2",
-    "react-scripts": "^3.4.3",
+    "react-medium-image-zoom": "^3.1.3",
+    "react-scripts": "^3.4.4",
     "react-toastify": "^5.5.0",
-    "react-youtube": "^7.11.2"
+    "react-youtube": "^7.13.1"
   },
   "scripts": {
     "start": "react-scripts start",
