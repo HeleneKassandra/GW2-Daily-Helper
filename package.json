@@ -2,7 +2,7 @@
   "name": "gw2dailyhelper",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.thedaemonarmy.com/gw2-daily-helper/",
+  "homepage": "https://www.helenekassandra.com/gw2-daily-helper/",
   "dependencies": {
     "@material-ui/core": "^3.9.4",
     "react": "^16.13.1",
