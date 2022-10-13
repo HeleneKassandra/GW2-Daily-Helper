@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import MobileNav from '../components/MobileNav'
+import MobileNav from '../components/MobileNav/MobileNav'
 import Drawer from '../components/Drawer'
 import { getDailyData } from '../lib/fetchData'
 export default function Home({ids}) {

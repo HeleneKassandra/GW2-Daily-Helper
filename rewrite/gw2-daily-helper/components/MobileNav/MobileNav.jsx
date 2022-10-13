@@ -1,5 +1,5 @@
 // The navbar that shows up at the bottom of the page on mobile
-import styles from "../styles/MobileNav.module.css";
+import styles from "./MobileNav.module.css";
 export default function MobileNav(){
     return (
         <nav className={styles.nav} aria-label="Category">

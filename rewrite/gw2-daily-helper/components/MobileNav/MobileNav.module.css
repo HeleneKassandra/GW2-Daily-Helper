@@ -6,6 +6,8 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
 }
 
 .button{  
