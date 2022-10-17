@@ -7,10 +7,10 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 
-export default function DailyItem({ name }) {
+export default function DailyItem({ name, achievementID }) {
     return (
         <ListItem key={name} disablePadding>
-            <ListItemButton>
+            <ListItemButton component="button">
                 <ListItemIcon>
                     <Image src="/img/Daily_Achievement.png" aria-hidden="true"  alt="The achievement icon from GW2" height="30" width="30" />
                 </ListItemIcon>

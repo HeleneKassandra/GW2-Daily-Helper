@@ -1,15 +1,15 @@
 /* All the content to be shown in the Drawer */
-import DailySelectContainer from "../DailySelectContainer"
+import DrawerListContainer from "./DrawerListContainer"
 import { Divider } from "@mui/material"
 
 export default function DrawerContent({ dailies }) {
     return (
         <>
-            <DailySelectContainer categoryName='PvE' dailies={dailies} />
+            <DrawerListContainer categoryName='PvE' dailies={dailies.filter(daily => daily.type === ('Gatherer' || 'Jumping Puzzle' || 'Minidungeon'))} />
             <Divider />
-            <DailySelectContainer categoryName='Fractals' dailies={dailies} />
+            <DrawerListContainer categoryName='Fractals' dailies={dailies.filter(daily => daily.type === 'Fractal' && (daily.name.includes("Tier 4") || daily.name.includes("Recommended")))} />
             <Divider />
-            <DailySelectContainer categoryName='WvW' dailies={dailies} />
+            <DrawerListContainer categoryName='WvW' dailies={dailies.filter(daily => daily.type === 'WvW')} />
         </>
     )
 }

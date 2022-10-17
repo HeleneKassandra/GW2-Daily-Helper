@@ -1,23 +1,22 @@
-import { useState } from 'react';
 import Drawer from '@mui/material/Drawer';
 import DrawerContent from './DrawerContent';
-export default function DrawerContainer({ dailies }) {
-
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
+export default function DrawerContainer({ dailies, isMobileMenuOpen, toggleMobileMenu }) {
+  
   const drawerWidth = '300px';
   return (
     <>
+    {/* Mobile Drawer */}
       <Drawer
         variant='temporary'
+        id='mobileMenu'
         anchor='left'
-        open={mobileOpen}
-        onClose={handleDrawerToggle}
+        open={isMobileMenuOpen}
+        onClose={toggleMobileMenu}
         ModalProps={{
           keepMounted: true,
         }}
         sx={{
-          display: { xs: 'block', sm: 'none' },
+          display: { xs: 'block', md: 'none' },
           width: drawerWidth,
           flexShrink: 0,
           '& .MuiDrawer-paper': {
@@ -27,10 +26,11 @@ export default function DrawerContainer({ dailies }) {
         }}>
         <DrawerContent dailies={dailies} />
       </Drawer>
+      {/* Desktop Drawer */}
       <Drawer
         variant="permanent"
         sx={{
-          display: { xs: 'none', sm: 'block' },
+          display: { xs: 'none', md: 'block' },
           '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
         }}
         open
