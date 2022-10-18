@@ -5,8 +5,9 @@
   --color-dark-grey: #141415;
   --color-highlight-pink: #DD82C0;
   --color-highlight-blue: #76D5E4;
-
+  --drawer-width: 300px;
 }
+
 html,
 body {
   padding: 0;

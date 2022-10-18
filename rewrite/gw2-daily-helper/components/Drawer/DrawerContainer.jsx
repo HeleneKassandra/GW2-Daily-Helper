@@ -1,8 +1,8 @@
 import Drawer from '@mui/material/Drawer';
-import DrawerContent from './DrawerContent';
-export default function DrawerContainer({ dailies, isMobileMenuOpen, toggleMobileMenu }) {
+
+export default function DrawerContainer({ children, isMobileMenuOpen, toggleMobileMenu }) {
   
-  const drawerWidth = '300px';
+  const drawerWidth = 'var(--drawer-width)';
   return (
     <>
     {/* Mobile Drawer */}
@@ -24,7 +24,7 @@ export default function DrawerContainer({ dailies, isMobileMenuOpen, toggleMobil
             boxSizing: 'border-box',
           },
         }}>
-        <DrawerContent dailies={dailies} />
+        {children}
       </Drawer>
       {/* Desktop Drawer */}
       <Drawer
@@ -35,7 +35,7 @@ export default function DrawerContainer({ dailies, isMobileMenuOpen, toggleMobil
         }}
         open
       >
-        <DrawerContent dailies={dailies} />
+        {children}
       </Drawer>
     </>
   )
