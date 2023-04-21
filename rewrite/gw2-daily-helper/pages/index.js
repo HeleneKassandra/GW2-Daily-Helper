@@ -17,7 +17,7 @@ export default function Home({ dailiesForToday, dailiesForTomorrow }) {
   const [selectedDaily, setSelectedDaily] = useState(null); // The selected Daily from the drawer menu
 
   useEffect(() => {
-    setDailiesForSelectedDay(isShowingToday ? dailiesForToday : dailiesForTomorrow);
+    setDailiesForSelectedDay(isShowingToday === 0 ? dailiesForToday : dailiesForTomorrow);
   }, [isShowingToday])
 
   return (
@@ -45,7 +45,7 @@ export default function Home({ dailiesForToday, dailiesForTomorrow }) {
         </DrawerContainer>
       <main className={styles.main}>
         <h1>
-         Select Daily
+         {selectedDaily?.name ? selectedDaily?.name : 'Select a daily'}
         </h1>
         {selectedDaily && <ResultContainer results={selectedDaily} />}
     {console.log(selectedDaily)}

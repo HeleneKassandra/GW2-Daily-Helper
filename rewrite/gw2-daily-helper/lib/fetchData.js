@@ -7,7 +7,7 @@ export async function getGW2DailyIds(showTomorrow){
 }
 
 async function fetchAchievementDataById(ids){
-    return await sanityClient.fetch('*[_type == "achievement" && achievement_id in $ids] { name, achievement_id, type, location[]->{map_name, area, wp_name, wp_code, type, gathering_item, "imageUrl": location_image.asset->url}}', {ids: ids}).then((achievements) => achievements).catch(err => new Error(err))
+    return await sanityClient.fetch('*[_type == "achievement" && achievement_id in $ids] { name, achievement_id, type, location[]->{_id, map_name, area, wp_name, wp_code, type, gathering_item, "imageUrl": location_image.asset->url}}', {ids: ids}).then((achievements) => achievements).catch(err => new Error(err))
     // Fetch achievements that match the ids Daily Ids return.
     // return data'
     // *[_type == "achievement" && achievement_id in [1887, 2991]]
